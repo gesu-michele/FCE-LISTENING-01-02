@@ -1,0 +1,1739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge B2 First • Complete Listening Mock 04 | Dr. Jesús Miguel Lima E. • JM ELT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'AnanthaSignature';
+      src: url('Anantha%20Signature%20For%20Personal%20Use.ttf') format('truetype'),
+           url('Anantha Signature For Personal Use.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --bg-canvas: #f1f5f9;
+      --surface-card: #ffffff;
+      --surface-subtle: #f8fafc;
+      --border-card: #e2e8f0;
+      --border-accent: #cbd5e1;
+
+      /* Royal & Cambridge Color Scheme */
+      --primary-blue: #1e40af;
+      --primary-blue-hover: #1d4ed8;
+      --primary-blue-light: #eff6ff;
+      --primary-blue-glow: rgba(30, 64, 175, 0.12);
+
+      --gold-royal: #b45309;
+      --gold-royal-light: #fef3c7;
+      --gold-border: #fcd34d;
+
+      --cambridge-red: #ba1c1c;
+      --cambridge-red-light: #fee2e2;
+
+      --emerald-green: #047857;
+      --emerald-green-light: #d1fae5;
+
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+
+      --shadow-premium: 0 10px 30px -5px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+      --shadow-card: 0 4px 16px rgba(15, 23, 42, 0.05);
+      --shadow-modal: 0 25px 50px -12px rgba(15, 23, 42, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-dark);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 18px;
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(30, 64, 175, 0.06) 0px, transparent 40%),
+        radial-gradient(at 100% 100%, rgba(180, 83, 9, 0.06) 0px, transparent 40%),
+        radial-gradient(at 50% 50%, rgba(220, 38, 38, 0.03) 0px, transparent 60%);
+    }
+
+    /* OUTER ARCHITECTURAL FRAME WRAPPER */
+    .master-frame-wrapper {
+      max-width: 1440px;
+      margin: 16px auto 30px auto;
+      width: 96%;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-top: 5px solid var(--primary-blue);
+      border-radius: 18px;
+      box-shadow: var(--shadow-premium);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - 40px);
+    }
+
+    /* TOP HEADER */
+    header.exam-top-bar {
+      background: #ffffff;
+      border-bottom: 2px solid var(--border-card);
+      padding: 16px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.03);
+    }
+
+    .brand-cluster {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .cambridge-crest-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .cambridge-crest {
+      width: 32px;
+      height: 34px;
+      fill: var(--cambridge-red);
+    }
+
+    .cambridge-titles {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .cambridge-titles .title-main {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 19px;
+      letter-spacing: -0.3px;
+      color: var(--text-dark);
+    }
+
+    .cambridge-titles .title-sub {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--cambridge-red);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .candidate-identity-divider {
+      border-left: 2px solid var(--border-card);
+      padding-left: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author-name-tag {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--primary-blue);
+      letter-spacing: -0.2px;
+    }
+
+    .author-sub-tag {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold-royal);
+    }
+
+    .exam-status-cluster {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* 45-MINUTE COUNTDOWN TIMER */
+    .cb-timer-capsule {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      font-weight: 800;
+      background: var(--primary-blue-light);
+      border: 2px solid var(--primary-blue);
+      color: var(--primary-blue);
+      padding: 6px 16px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 8px var(--primary-blue-glow);
+    }
+
+    .part-progress-pill {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14.5px;
+      font-weight: 800;
+      background: var(--gold-royal-light);
+      border: 1.5px solid var(--gold-border);
+      color: var(--gold-royal);
+      padding: 6px 16px;
+      border-radius: 30px;
+    }
+
+    /* AUDIO CONTROLLER BANNER */
+    .audio-hero-strip {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border-bottom: 2px solid var(--border-card);
+      padding: 20px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-left: 6px solid var(--gold-royal);
+    }
+
+    .audio-strip-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .audio-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .audio-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--primary-blue-light);
+      border: 2px solid var(--primary-blue);
+      color: var(--primary-blue);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+    }
+
+    .audio-titles h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+
+    .audio-titles span {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .listens-quota-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 800;
+      background: var(--gold-royal-light);
+      border: 1.5px solid var(--gold-border);
+      color: var(--gold-royal);
+      padding: 6px 14px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* GOOGLE DRIVE IFRAME (200PX HEIGHT - ZERO CLIPPING) */
+    .drive-player-viewport {
+      width: 100%;
+      height: 200px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #cbd5e1;
+      background: #000000;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .drive-player-viewport iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .drive-popout-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      align-self: flex-start;
+    }
+
+    .drive-popout-link:hover {
+      text-decoration: underline;
+    }
+
+    /* MAIN EXAM VIEWPORT */
+    main.exam-viewport {
+      flex: 1;
+      padding: 30px 36px 50px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+    }
+
+    .stage-block {
+      display: none;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .stage-block.active {
+      display: flex;
+    }
+
+    /* INSTRUCTION BANNER */
+    .instruction-callout-card {
+      background: var(--primary-blue-light);
+      border: 2px solid #bfdbfe;
+      border-left: 6px solid var(--primary-blue);
+      border-radius: 14px;
+      padding: 22px 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .instruction-callout-card h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary-blue);
+      margin-bottom: 4px;
+    }
+
+    .instruction-callout-card p {
+      font-size: 17.5px;
+      color: #1e3a8a;
+      font-weight: 500;
+    }
+
+    /* QUESTION CARDS */
+    .questions-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .question-card-box {
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 14px;
+      padding: 26px 30px;
+      box-shadow: var(--shadow-card);
+      transition: all 0.2s ease;
+    }
+
+    .question-card-box:focus-within {
+      border-color: var(--primary-blue);
+      box-shadow: 0 8px 24px var(--primary-blue-glow);
+    }
+
+    .q-head-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .q-number-cube {
+      background: var(--primary-blue);
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 900;
+      font-size: 18px;
+      min-width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(30, 64, 175, 0.3);
+    }
+
+    .q-scenario-title {
+      font-weight: 800;
+      font-size: 20px;
+      color: var(--text-dark);
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .bookmark-flag {
+      font-size: 22px;
+      color: #cbd5e1;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.15s;
+    }
+
+    .bookmark-flag.active {
+      color: var(--gold-royal);
+    }
+
+    .q-core-prompt {
+      font-weight: 700;
+      font-size: 19px;
+      color: var(--primary-blue);
+      margin-left: 58px;
+      margin-bottom: 18px;
+    }
+
+    .options-pill-stack {
+      margin-left: 58px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 1050px;
+    }
+
+    .option-interactive-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 20px;
+      background: var(--surface-subtle);
+      border: 2px solid var(--border-card);
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-dark);
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+
+    .option-interactive-row:hover {
+      background: #ffffff;
+      border-color: var(--primary-blue);
+      color: var(--primary-blue);
+      transform: translateX(4px);
+    }
+
+    .option-interactive-row input[type="radio"] {
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border: 2.5px solid #64748b;
+      border-radius: 50%;
+      outline: none;
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      background: #ffffff;
+      transition: border-color 0.15s;
+    }
+
+    .option-interactive-row input[type="radio"]::before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      transform: scale(0);
+      background: var(--primary-blue);
+      transition: transform 0.15s ease-in-out;
+    }
+
+    .option-interactive-row input[type="radio"]:checked {
+      border-color: var(--primary-blue);
+    }
+
+    .option-interactive-row input[type="radio"]:checked::before {
+      transform: scale(1);
+    }
+
+    /* PART 2 SENTENCE COMPLETION */
+    .passage-card-enclosure {
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 16px;
+      padding: 36px 42px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .passage-main-headline {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+      text-align: center;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--border-card);
+    }
+
+    .gap-line-item {
+      margin-bottom: 26px;
+      font-size: 19px;
+      line-height: 2.3;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .gap-line-item strong.gap-idx {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      color: var(--primary-blue);
+      background: var(--primary-blue-light);
+      border: 1px solid #bfdbfe;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .gap-interactive-field {
+      display: inline-block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary-blue);
+      background: var(--surface-subtle);
+      border: 2px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 6px 14px;
+      outline: none;
+      min-width: 220px;
+      margin: 0 6px;
+      transition: all 0.2s;
+    }
+
+    .gap-interactive-field:focus {
+      background: #ffffff;
+      border-color: var(--primary-blue);
+      box-shadow: 0 0 0 3px var(--primary-blue-glow);
+    }
+
+    /* PART 3 MULTIPLE MATCHING */
+    .matching-legend-enclosure {
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 14px;
+      padding: 24px 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 26px;
+      font-size: 17.5px;
+      box-shadow: var(--shadow-card);
+    }
+
+    @media (max-width: 860px) {
+      .matching-legend-enclosure {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .matching-badge-letter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--gold-royal-light);
+      border: 2px solid var(--gold-royal);
+      color: var(--gold-royal);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      font-size: 16px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .matching-selector-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 26px;
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 14px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .matching-speaker-text {
+      font-weight: 800;
+      font-size: 19px;
+      color: var(--text-dark);
+    }
+
+    .matching-drop-menu {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      font-size: 18px;
+      padding: 8px 18px;
+      border: 2px solid #cbd5e1;
+      border-radius: 8px;
+      background: var(--surface-subtle);
+      color: var(--primary-blue);
+      outline: none;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .matching-drop-menu:focus {
+      border-color: var(--primary-blue);
+      background: #ffffff;
+    }
+
+    /* POST-EXAM DIAGNOSTIC FEEDBACK */
+    .diagnostic-panel-box {
+      display: none;
+      margin-top: 18px;
+      padding: 20px 24px;
+      border-radius: 12px;
+      font-size: 16.5px;
+      line-height: 1.6;
+    }
+
+    .diagnostic-panel-box.correct {
+      display: block;
+      background: var(--emerald-green-light);
+      border-left: 6px solid var(--emerald-green);
+      color: #065f46;
+    }
+
+    .diagnostic-panel-box.incorrect {
+      display: block;
+      background: var(--cambridge-red-light);
+      border-left: 6px solid var(--cambridge-red);
+      color: #991b1b;
+    }
+
+    .diag-title-line {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 18.5px;
+      margin-bottom: 8px;
+    }
+
+    .diag-script-quote {
+      font-style: italic;
+      color: #1e293b;
+      margin-bottom: 8px;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+
+    /* HIGHLIGHT ANSWERS ON EVALUATION */
+    .option-interactive-row.highlight-correct {
+      background: var(--emerald-green-light) !important;
+      border-color: var(--emerald-green) !important;
+      color: #065f46 !important;
+      font-weight: 800;
+    }
+
+    .option-interactive-row.highlight-wrong {
+      background: var(--cambridge-red-light) !important;
+      border-color: var(--cambridge-red) !important;
+      color: #991b1b !important;
+      text-decoration: line-through;
+    }
+
+    .gap-interactive-field.highlight-correct {
+      background: var(--emerald-green-light) !important;
+      border-color: var(--emerald-green) !important;
+      color: #065f46 !important;
+    }
+
+    .gap-interactive-field.highlight-wrong {
+      background: var(--cambridge-red-light) !important;
+      border-color: var(--cambridge-red) !important;
+      color: #991b1b !important;
+    }
+
+    /* NAVIGATION BUTTON BAR */
+    .exam-nav-toolbar-row {
+      margin-top: 36px;
+      margin-bottom: 30px;
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 12px;
+      padding: 18px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow-card);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .nav-actions-group-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-action-nav {
+      font-family: 'Outfit', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 13px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action-nav.back {
+      background: var(--surface-subtle);
+      border-color: var(--border-card);
+      color: var(--text-dark);
+    }
+
+    .btn-action-nav.back:hover {
+      background: #ffffff;
+      border-color: var(--primary-blue);
+      color: var(--primary-blue);
+    }
+
+    .btn-action-nav.forward {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, #2563eb 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(30, 64, 175, 0.35);
+    }
+
+    .btn-action-nav.forward:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(30, 64, 175, 0.45);
+    }
+
+    .btn-action-nav.finish {
+      background: linear-gradient(135deg, var(--gold-royal) 0%, #d97706 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(180, 83, 9, 0.35);
+    }
+
+    .btn-action-nav.finish:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(180, 83, 9, 0.45);
+    }
+
+    .btn-action-nav.hub-return {
+      background: linear-gradient(135deg, var(--emerald-green) 0%, #059669 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(4, 120, 87, 0.35);
+      border-color: #047857;
+    }
+
+    .btn-action-nav.hub-return:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(4, 120, 87, 0.5);
+    }
+
+    /* INSTITUTIONAL FOOTER */
+    footer.institutional-master-footer {
+      background: #0f172a;
+      border-top: 2px solid #1e293b;
+      padding: 18px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #94a3b8;
+      font-size: 14.5px;
+      margin-top: auto;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .institutional-master-footer strong {
+      color: #f8fafc;
+    }
+
+    .institutional-master-footer .trainer-title {
+      color: var(--gold-border);
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* FINAL EVALUATION MODAL */
+    .modal-backdrop-veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(8px);
+      display: none;
+      place-items: center;
+      z-index: 200;
+    }
+
+    .modal-backdrop-veil.active {
+      display: grid;
+    }
+
+    .modal-window-box {
+      background: #ffffff;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-modal);
+      border: 3px solid var(--border-card);
+      padding: 34px 40px;
+      text-align: center;
+    }
+
+    .modal-grand-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .modal-big-score {
+      font-size: 56px;
+      font-weight: 900;
+      color: var(--primary-blue);
+      margin: 14px 0;
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1;
+    }
+
+    .modal-breakdown-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 22px 0;
+    }
+
+    .breakdown-pill-box {
+      background: var(--surface-subtle);
+      border: 2px solid var(--border-card);
+      border-radius: 10px;
+      padding: 10px 4px;
+    }
+
+    .breakdown-pill-box span {
+      display: block;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .breakdown-pill-box strong {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      color: var(--text-dark);
+    }
+
+    .modal-explanation-p {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .modal-actions-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTER FRAME ENCLOSURE -->
+  <div class="master-frame-wrapper">
+
+    <!-- TOP HEADER -->
+    <header class="exam-top-bar">
+      <div class="brand-cluster">
+        <a href="./index.html" class="cambridge-crest-box">
+          <svg class="cambridge-crest" viewBox="0 0 24 24">
+            <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 2.18l6 2.25v4.66c0 4.14-2.73 8.02-6 9.11-3.27-1.09-6-4.97-6-9.11V6.43l6-2.25z"/>
+          </svg>
+          <div class="cambridge-titles">
+            <span class="title-main">CAMBRIDGE ENGLISH</span>
+            <span class="title-sub">B2 First Assessment • Mock 04</span>
+          </div>
+        </a>
+
+        <div class="candidate-identity-divider">
+          <span class="author-name-tag">Dr. Jesús Miguel Lima E. • JM ELT Solutions</span>
+          <span class="author-sub-tag">Candidate ID: B2-FCET-06</span>
+        </div>
+      </div>
+
+      <div class="exam-status-cluster">
+        <!-- 45-MINUTE COUNTDOWN TIMER -->
+        <div class="cb-timer-capsule" title="Official Exam Time Remaining">
+          <span>⏱</span>
+          <span id="countdownTimer">45:00</span>
+        </div>
+
+        <span class="part-progress-pill" id="topPartIndicator">Part 1 of 4</span>
+      </div>
+    </header>
+
+    <!-- FULL DRIVE AUDIO SUITE (200PX HEIGHT - ZERO CLIPPING) -->
+    <div class="audio-hero-strip">
+      <div class="audio-strip-top">
+        <div class="audio-meta-left">
+          <div class="audio-icon-box">🎧</div>
+          <div class="audio-titles">
+            <h3 id="currentTrackTitle">Audio Stream: Part 1 • Short Situations</h3>
+            <span>Google Drive Direct Stream Player</span>
+          </div>
+        </div>
+
+        <div class="listens-quota-badge">
+          <span>🔁</span> Exam Standard: 2 Listens Allowed
+        </div>
+      </div>
+
+      <!-- Drive Native Embed with 200px Height so Volume Slider & Track Never Clip -->
+      <div class="drive-player-viewport">
+        <iframe id="driveAudioFrame" src="https://drive.google.com/file/d/1cGaowaLXuSurqNOV6NuQAX8d9TJROFzM/preview" allow="autoplay"></iframe>
+      </div>
+
+      <a id="driveBackupLink" href="https://drive.google.com/file/d/1cGaowaLXuSurqNOV6NuQAX8d9TJROFzM/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="drive-popout-link">
+        ↗ Open audio track directly in Google Drive
+      </a>
+    </div>
+
+    <!-- MAIN EXAM VIEWPORT -->
+    <main class="exam-viewport">
+      <form id="masterExamForm">
+
+        <!-- ================= PART 1 (Questions 1–8) ================= -->
+        <section class="stage-block active" id="stage_1">
+          <div class="instruction-callout-card">
+            <h2>Questions 1–8</h2>
+            <p>You will hear people talking in eight different situations. For questions <strong>1–8</strong>, choose the best answer (<strong>A</strong>, <strong>B</strong> or <strong>C</strong>). In the official Cambridge exam, you will hear each piece twice. (1 mark per question).</p>
+          </div>
+
+          <div class="questions-stack">
+            <!-- Q1 -->
+            <div class="question-card-box" id="card_q1">
+              <div class="q-head-line">
+                <span class="q-number-cube">1</span>
+                <span class="q-scenario-title">You hear two teenagers talking about a lost scarf.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">Where does the girl think she lost it?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q1" value="A"><span>on the bus</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q1" value="B"><span>in the street</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q1" value="C"><span>in a shop</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q1"></div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="question-card-box" id="card_q2">
+              <div class="q-head-line">
+                <span class="q-number-cube">2</span>
+                <span class="q-scenario-title">You hear two people talking about a proposed new motorway.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">What is the man worried about?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q2" value="A"><span>the noise from fast-moving traffic</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q2" value="B"><span>the loss of local sports facilities</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q2" value="C"><span>the permanent harm to the countryside</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q2"></div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="question-card-box" id="card_q3">
+              <div class="q-head-line">
+                <span class="q-number-cube">3</span>
+                <span class="q-scenario-title">You hear a radio announcer giving a traffic update.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">Who is his advice for?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q3" value="A"><span>People going shopping.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q3" value="B"><span>People going to watch football.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q3" value="C"><span>People going to a music festival.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q3"></div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="question-card-box" id="card_q4">
+              <div class="q-head-line">
+                <span class="q-number-cube">4</span>
+                <span class="q-scenario-title">You overhear a woman talking on the phone.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">What does she want the other person to do?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q4" value="A"><span>to meet her somewhere</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q4" value="B"><span>to give someone else a message</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q4" value="C"><span>to buy something for her</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q4"></div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="question-card-box" id="card_q5">
+              <div class="q-head-line">
+                <span class="q-number-cube">5</span>
+                <span class="q-scenario-title">You hear two people talking about holidays.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">What is the woman encouraging the man to do?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q5" value="A"><span>visit particular countries</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q5" value="B"><span>go on an environmentally-friendly holiday</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q5" value="C"><span>travel with a large group of people</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q5"></div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="question-card-box" id="card_q6">
+              <div class="q-head-line">
+                <span class="q-number-cube">6</span>
+                <span class="q-scenario-title">You hear an art critic talking about a famous painting.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">Why does he think it is so popular?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q6" value="A"><span>It reflects a common human experience.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q6" value="B"><span>It is worth an enormous amount of money.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q6" value="C"><span>It is a particularly brilliant work of art.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q6"></div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="question-card-box" id="card_q7">
+              <div class="q-head-line">
+                <span class="q-number-cube">7</span>
+                <span class="q-scenario-title">You overhear a salesman talking about his job.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">How does he feel about it?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q7" value="A"><span>keen to find work elsewhere</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q7" value="B"><span>worried that he might be replaced</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q7" value="C"><span>confident he will soon be promoted</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q7"></div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="question-card-box" id="card_q8">
+              <div class="q-head-line">
+                <span class="q-number-cube">8</span>
+                <span class="q-scenario-title">You hear two people talking about a ferry ride to an island.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">What does the man say about the experience?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q8" value="A"><span>He felt rather ill when he was on board.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q8" value="B"><span>The ship had limited facilities for passengers.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q8" value="C"><span>The crossing was no longer than he had expected.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q8"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PART 2 (Questions 9–18) ================= -->
+        <section class="stage-block" id="stage_2">
+          <div class="instruction-callout-card">
+            <h2>Questions 9–18</h2>
+            <p>You will hear a businesswoman called Jessica Morton talking on the radio about a car journey she made across a desert in Australia. For questions <strong>9–18</strong>, complete the sentences with a word or short phrase. Write directly into the fields. (1 mark per gap).</p>
+          </div>
+
+          <div class="passage-card-enclosure">
+            <div class="passage-main-headline">Crossing the desert</div>
+
+            <div class="gap-line-item">
+              Jessica says she had to be in the town of Alice Springs by Thursday for a <strong class="gap-idx">(9)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_9" placeholder="answer 9">.
+              <div class="diagnostic-panel-box" id="diag_q9"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Jessica discovered there was no train to Alice Springs on <strong class="gap-idx">(10)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_10" placeholder="answer 10"> 
+              in summer.
+              <div class="diagnostic-panel-box" id="diag_q10"></div>
+            </div>
+
+            <div class="gap-line-item">
+              The village of Glendambo was Jessica's last chance to get petrol for <strong class="gap-idx">(11)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_11" placeholder="answer 11">.
+              <div class="diagnostic-panel-box" id="diag_q11"></div>
+            </div>
+
+            <div class="gap-line-item">
+              When Jessica saw a <strong class="gap-idx">(12)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_12" placeholder="answer 12">, 
+              she left the main road.
+              <div class="diagnostic-panel-box" id="diag_q12"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Jessica stopped the car when some <strong class="gap-idx">(13)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_13" placeholder="answer 13"> 
+              ran across in front of her.
+              <div class="diagnostic-panel-box" id="diag_q13"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Jessica tried putting some <strong class="gap-idx">(14)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_14" placeholder="answer 14"> 
+              under the wheels.
+              <div class="diagnostic-panel-box" id="diag_q14"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Jessica was shocked to find that her <strong class="gap-idx">(15)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_15" placeholder="answer 15"> 
+              didn't work in the desert.
+              <div class="diagnostic-panel-box" id="diag_q15"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Jessica stopped using the <strong class="gap-idx">(16)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_16" placeholder="answer 16"> 
+              when the sun went down.
+              <div class="diagnostic-panel-box" id="diag_q16"></div>
+            </div>
+
+            <div class="gap-line-item">
+              When Jessica reached the building, she regretted leaving her <strong class="gap-idx">(17)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_17" placeholder="answer 17">.
+              <div class="diagnostic-panel-box" id="diag_q17"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Jessica found a way to get her own car moving when she looked at the <strong class="gap-idx">(18)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_18" placeholder="answer 18"> 
+              on another car.
+              <div class="diagnostic-panel-box" id="diag_q18"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PART 3 (Questions 19–23) ================= -->
+        <section class="stage-block" id="stage_3">
+          <div class="instruction-callout-card">
+            <h2>Questions 19–23</h2>
+            <p>You will hear five short extracts in which university students are talking about their next summer vacation. For questions <strong>19–23</strong>, choose from the list (<strong>A–H</strong>) what each speaker wants to do during their vacation. Use the letters only once. There are three extra letters. (1 mark per item).</p>
+          </div>
+
+          <div class="matching-legend-enclosure">
+            <div><span class="matching-badge-letter">A</span> start learning a language</div>
+            <div><span class="matching-badge-letter">B</span> spend time with friends</div>
+            <div><span class="matching-badge-letter">C</span> travel abroad</div>
+            <div><span class="matching-badge-letter">D</span> do charity work</div>
+            <div><span class="matching-badge-letter">E</span> read books</div>
+            <div><span class="matching-badge-letter">F</span> earn some money</div>
+            <div><span class="matching-badge-letter">G</span> learn to drive</div>
+            <div><span class="matching-badge-letter">H</span> do more exercise</div>
+          </div>
+
+          <div class="questions-stack" style="margin-top:14px;">
+            <!-- Speaker 1 -->
+            <div class="matching-selector-box" id="card_q19">
+              <span class="matching-speaker-text">Speaker 1 (Question 19)</span>
+              <select class="matching-drop-menu" id="match_19">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q19"></div>
+
+            <!-- Speaker 2 -->
+            <div class="matching-selector-box" id="card_q20">
+              <span class="matching-speaker-text">Speaker 2 (Question 20)</span>
+              <select class="matching-drop-menu" id="match_20">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q20"></div>
+
+            <!-- Speaker 3 -->
+            <div class="matching-selector-box" id="card_q21">
+              <span class="matching-speaker-text">Speaker 3 (Question 21)</span>
+              <select class="matching-drop-menu" id="match_21">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q21"></div>
+
+            <!-- Speaker 4 -->
+            <div class="matching-selector-box" id="card_q22">
+              <span class="matching-speaker-text">Speaker 4 (Question 22)</span>
+              <select class="matching-drop-menu" id="match_22">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q22"></div>
+
+            <!-- Speaker 5 -->
+            <div class="matching-selector-box" id="card_q23">
+              <span class="matching-speaker-text">Speaker 5 (Question 23)</span>
+              <select class="matching-drop-menu" id="match_23">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q23"></div>
+          </div>
+        </section>
+
+        <!-- ================= PART 4 (Questions 24–30) ================= -->
+        <section class="stage-block" id="stage_4">
+          <div class="instruction-callout-card">
+            <h2>Questions 24–30</h2>
+            <p>You will hear a radio interview with a woman called Amelia Richards, whose job involves planning people's weddings. For questions <strong>24–30</strong>, choose the best answer (<strong>A</strong>, <strong>B</strong> or <strong>C</strong>). (1 mark per item).</p>
+          </div>
+
+          <div class="questions-stack">
+            <!-- Q24 -->
+            <div class="question-card-box" id="card_q24">
+              <div class="q-head-line">
+                <span class="q-number-cube">24</span>
+                <span class="q-scenario-title">Amelia says that a wedding planner is not responsible for</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q24" value="A"><span>choosing the wedding dress.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q24" value="B"><span>discussing fees with the photographer.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q24" value="C"><span>advising on wedding customs.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q24"></div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="question-card-box" id="card_q25">
+              <div class="q-head-line">
+                <span class="q-number-cube">25</span>
+                <span class="q-scenario-title">Why, according to Amelia, do many couples employ a wedding planner?</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q25" value="A"><span>They don't have enough time to plan it themselves.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q25" value="B"><span>Their families often can't agree on some of the details.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q25" value="C"><span>It is cheaper than if they try to organise it themselves.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q25"></div>
+            </div>
+
+            <!-- Q26 -->
+            <div class="question-card-box" id="card_q26">
+              <div class="q-head-line">
+                <span class="q-number-cube">26</span>
+                <span class="q-scenario-title">Amelia decided to become a wedding planner following her experience of</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q26" value="A"><span>working in the catering industry.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q26" value="B"><span>organising her own wedding.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q26" value="C"><span>helping to run charity events.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q26"></div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="question-card-box" id="card_q27">
+              <div class="q-head-line">
+                <span class="q-number-cube">27</span>
+                <span class="q-scenario-title">Amelia believes she is good at</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q27" value="A"><span>selecting the best-paid wedding planning jobs.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q27" value="B"><span>planning more than one wedding at a time.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q27" value="C"><span>managing to remain calm under pressure.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q27"></div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="question-card-box" id="card_q28">
+              <div class="q-head-line">
+                <span class="q-number-cube">28</span>
+                <span class="q-scenario-title">How is Amelia paid?</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q28" value="A"><span>She charges according to the number of hours she has worked.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q28" value="B"><span>She receives a percentage of the total cost of the wedding.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q28" value="C"><span>She gets a fixed fee for every kind of wedding.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q28"></div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="question-card-box" id="card_q29">
+              <div class="q-head-line">
+                <span class="q-number-cube">29</span>
+                <span class="q-scenario-title">What does Amelia dislike about her job?</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q29" value="A"><span>She has little time each year to take holidays.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q29" value="B"><span>There is no guaranteed income from her work.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q29" value="C"><span>She often has to work evenings and weekends.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q29"></div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="question-card-box" id="card_q30">
+              <div class="q-head-line">
+                <span class="q-number-cube">30</span>
+                <span class="q-scenario-title">Amelia says the best way to get work as a wedding planner is to show people</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q30" value="A"><span>pictures of events you have successfully organised.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q30" value="B"><span>references from people who have used your services.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q30" value="C"><span>your qualifications in wedding planning.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q30"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FLOW-BASED NAVIGATION TOOLBAR -->
+        <div class="exam-nav-toolbar-row">
+          <button type="button" class="btn-action-nav back" id="btnPrevStage" onclick="navigateStage(-1)">
+            ← Previous Part
+          </button>
+
+          <div class="nav-actions-group-right">
+            <button type="button" class="btn-action-nav forward" id="btnNextStage" onclick="navigateStage(1)">
+              Next: Part 2 ➔
+            </button>
+            <button type="button" class="btn-action-nav finish" id="btnSubmitAll" style="display:none;" onclick="evaluateMasterExam()">
+              Finish & Submit Exam (30 Marks) ➔
+            </button>
+            <button type="button" class="btn-action-nav hub-return" id="btnReturnToHub" style="display:none;" onclick="returnToHub()">
+              Return to Roadmap Hub ➔
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </main>
+
+    <!-- INSTITUTIONAL MASTER FOOTER -->
+    <footer class="institutional-master-footer">
+      <div>
+        <span>Cambridge B2 First Examination Suite • All Rights Reserved © by </span>
+        <strong>Dr. Jesús Miguel Lima E. • JM ELT Solutions</strong>
+      </div>
+      <div class="trainer-title">Certified Cambridge CELTA & DELTA Trainer</div>
+    </footer>
+
+  </div>
+
+  <!-- RESULT & DIAGNOSTIC MODAL -->
+  <div class="modal-backdrop-veil" id="modalResultSheet">
+    <div class="modal-window-box">
+      <div style="font-family:'Outfit'; font-size:14px; font-weight:800; color:var(--primary-blue); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
+        Assessment Report • Mock 04
+      </div>
+      <h2 class="modal-grand-title">Diagnostic Results</h2>
+      <div class="modal-big-score" id="grandScoreDisplay">0 / 30</div>
+      
+      <div class="modal-breakdown-row">
+        <div class="breakdown-pill-box"><span>Part 1</span><strong id="m_p1">0/8</strong></div>
+        <div class="breakdown-pill-box"><span>Part 2</span><strong id="m_p2">0/10</strong></div>
+        <div class="breakdown-pill-box"><span>Part 3</span><strong id="m_p3">0/5</strong></div>
+        <div class="breakdown-pill-box"><span>Part 4</span><strong id="m_p4">0/7</strong></div>
+      </div>
+
+      <p class="modal-explanation-p">
+        Full pedagogical diagnosis has been unlocked across all 4 parts. You can review your answers, audioscript evidence, and distractor traps on screen, or return to the syllabus hub.
+      </p>
+
+      <div class="modal-actions-stack">
+        <button type="button" class="btn-action-nav hub-return" style="width:100%; justify-content:center;" onclick="returnToHub()">
+          Return to Roadmap Hub ➔
+        </button>
+        <button type="button" class="btn-action-nav back" style="width:100%; justify-content:center;" onclick="closeModalAndStudy()">
+          Review Detailed Answers on Screen
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. DRIVE EMBED TRACKS CONFIGURATION (TEST 6)
+    const DRIVE_TRACKS = {
+      1: {
+        title: "Part 1 • Short Situations",
+        url: "https://drive.google.com/file/d/1cGaowaLXuSurqNOV6NuQAX8d9TJROFzM/preview",
+        directUrl: "https://drive.google.com/file/d/1cGaowaLXuSurqNOV6NuQAX8d9TJROFzM/view?usp=sharing"
+      },
+      2: {
+        title: "Part 2 • Jessica Morton: Crossing the Desert",
+        url: "https://drive.google.com/file/d/1NTlSGsSBSWwK2UWgkv77annTSyzjtk-J/preview",
+        directUrl: "https://drive.google.com/file/d/1NTlSGsSBSWwK2UWgkv77annTSyzjtk-J/view?usp=sharing"
+      },
+      3: {
+        title: "Part 3 • Summer Vacation Plans",
+        url: "https://drive.google.com/file/d/1BNpNarNcqrcNY6MKCmdNezzN8eGMoZKM/preview",
+        directUrl: "https://drive.google.com/file/d/1BNpNarNcqrcNY6MKCmdNezzN8eGMoZKM/view?usp=sharing"
+      },
+      4: {
+        title: "Part 4 • Amelia Richards: Wedding Planner",
+        url: "https://drive.google.com/file/d/1X_XWaHl1bDoiWjz06ziJ3FU50xb5pSfT/preview",
+        directUrl: "https://drive.google.com/file/d/1X_XWaHl1bDoiWjz06ziJ3FU50xb5pSfT/view?usp=sharing"
+      }
+    };
+
+    // 2. MASTER PEDAGOGICAL DATABASE FOR TEST 6
+    const MASTER_DATA = {
+      // Part 1
+      q1: { correct: "B", script: "Girl: '...and it had definitely gone by the time I got the bus home, so it most likely happened when I was looking at shop windows earlier. It was quite windy.'", whyCorrect: "She deduces that the strong wind blew it off while she was looking at shop windows in the street.", trap: "She already lacked it before boarding the bus (rules out A) and only retrieved her hat from the changing room (rules out C)." },
+      q2: { correct: "C", script: "Man: '...Well, it'd go straight through an area of outstanding natural beauty and the view from the village would never be the same again...'", whyCorrect: "His primary concern is the irreversible environmental and scenic destruction of the countryside.", trap: "He expects vehicle noise will be distant (rules out A), and as a rugby player he is unconcerned about losing the football pitch (rules out B)." },
+      q3: { correct: "C", script: "Announcer: '...make sure you get to the park nice and early this evening so you're not too far back from the stage...'", whyCorrect: "The advice is directed at music festival attendees going to the concert in the park.", trap: "Football fans heading home and shoppers from the sales are causes of the severe ring road traffic, not the target audience." },
+      q4: { correct: "B", script: "Woman: '...Could you mention that I've bought her that hat she likes so much and that I'll give it to her when I see her just before the wedding next month?'", whyCorrect: "She wants her contact to pass on a specific message to her cousin Emily.", trap: "She is not asking to meet her somewhere or requesting that she purchase anything." },
+      q5: { correct: "B", script: "Woman: '...So how about spending a fortnight in the village in the nature reserve? You wouldn't leave much of a carbon footprint there because there's no road and no power supply either...'", whyCorrect: "She encourages him to book an eco-friendly holiday with minimal carbon footprint in a nature reserve.", trap: "He dislikes long-distance flights and package tours with big crowds, eliminating A and C." },
+      q6: { correct: "A", script: "Art Critic: '...Perhaps the answer lies in the situation it shows, or more precisely the way it sums up a situation that all of us have to face up to and deal with at some point in our lives.'", whyCorrect: "Its enduring popularity comes from portraying a universal human life challenge everyone encounters.", trap: "He explicitly notes that other paintings cost tens of millions more and technical perfection alone doesn't explain the emotional bond." },
+      q7: { correct: "B", script: "Salesman: '...so it came as something of a shock when I heard a rumour about a younger representative possibly taking my place in the sales team.'", whyCorrect: "He feels anxious and threatened by the rumour that a younger colleague might replace him.", trap: "He has no desire to move to another firm (rules out A) and earlier promotion rumors to manager have passed." },
+      q8: { correct: "C", script: "Man: '...Yes, though we actually sailed into the harbour right on schedule.'", whyCorrect: "The ferry crossing took the precise amount of scheduled time anticipated.", trap: "The woman felt unwell, not the man (rules out A); there were cinemas and restaurants on board (rules out B)." },
+
+      // Part 2
+      q9: { valid: ["meeting"], script: "Jessica: '...when I had a phone call from my boss saying there would be a meeting the following Thursday afternoon and that it was vital for me to attend.'", whyCorrect: "An essential business meeting in Alice Springs prompted the urgent journey." },
+      q10: { valid: ["Wednesday", "Wednesdays", "wednesday", "wednesdays"], script: "Jessica: '...then I noticed the Wednesday service was only in winter. Not really fancying a twenty-one-hour bus ride, I decided to hire a car.'", whyCorrect: "There was no mid-week passenger train running on Wednesdays during summer." },
+      q11: { valid: ["252 kilometres", "252 kilometers", "252 km", "252km"], script: "Jessica: '...I reminded myself to fill up at the small town of Glendambo as it would be 252 kilometres until the next petrol station.'", whyCorrect: "The remote distance to the next fuel supply was exactly 252 kilometres." },
+      q12: { valid: ["hill"], script: "Jessica: '...but it wasn't until a hill became visible that I eventually turned off the highway to have a quick look at the countryside.'", whyCorrect: "Spotting a hill in the landscape prompted her to exit the highway onto the desert track." },
+      q13: { valid: ["wild horses", "horses"], script: "Jessica: '...I wouldn't have been that surprised to see kangaroos... but these were wild horses.'", whyCorrect: "Wild horses suddenly crossed the track, forcing her to brake and spin into soft sand." },
+      q14: { valid: ["clothes"], script: "Jessica: '...I needed something like rugs to place between the sand and the wheels to make them grip, but I didn't have any, so I used some clothes instead.'", whyCorrect: "She wedged articles of clothing under the tyres in an attempt to gain traction." },
+      q15: { valid: ["car radio", "radio"], script: "Jessica: '...I turned the car radio on just to hear some voices really, but there was no sound from it. I was just too far from civilisation. That shocked me...'", whyCorrect: "The total absence of broadcast signal on the car radio was a shock." },
+      q16: { valid: ["air-conditioning", "air conditioning", "airconditioning"], script: "Jessica: '...and at sunset to avoid using up all the remaining petrol, which would have been a disaster, I turned off the air conditioning.'", whyCorrect: "She turned off the vehicle's air conditioning at sunset to preserve remaining petrol." },
+      q17: { valid: ["vehicle", "car"], script: "Jessica: '...and I began to wish I'd followed the rule of staying with your vehicle if you want to survive in the desert.'", whyCorrect: "She regretted abandoning her vehicle to hike to the deserted homestead." },
+      q18: { valid: ["flat tyres", "flat tires", "tyres", "tires"], script: "Jessica: '...to increase the surface area of the tyres I'd let some air out until they were almost as flat as those on the abandoned car. If I hadn't seen them I'd probably never have thought of it.'", whyCorrect: "Observing deflated flat tyres on an abandoned car showed her how to regain grip." },
+
+      // Part 3
+      q19: { correct: "E", script: "Speaker 1: '...so what I'm looking forward to doing this time is catching up on some works by my favourite French novelists, even though... it'll have to be the translated versions.'", whyCorrect: "E: He wants to dedicate his holiday to reading French literature in translation.", trap: "His friends will be away (rules out B), foreign travel is postponed for another year (rules out C), and he won't learn the language (rules out A)." },
+      q20: { correct: "D", script: "Speaker 2: '...unlike them I'll be working as a volunteer collecting old clothes for a not-for-profit organisation that sends them to the poorest people in developing countries...'", whyCorrect: "D: He has committed to unpaid charitable voluntary service.", trap: "He has to walk because he cannot drive (rules out G), and he is an unpaid volunteer (rules out F)." },
+      q21: { correct: "G", script: "Speaker 3: '...the one thing that would really change my life would be if I didn't have to rely on my parents for lifts everywhere, so I've already booked lessons for the summer and will be taking my test in early autumn...'", whyCorrect: "G: She prioritises taking driving lessons and passing her driving test.", trap: "She considered Chinese lessons (rules out A) and reading Shakespeare (rules out E), but chose driving." },
+      q22: { correct: "H", script: "Speaker 4: '...instead I told myself I was going to change my rather unhealthy summer lifestyle... and spend my time in the countryside. I've made my mind up to walk everywhere rather than use the car...'", whyCorrect: "H: He wants to adopt an active physical routine and walk across the countryside.", trap: "He turned down joining friends in Florida (rules out B and C) and has already passed his driving test (rules out G)." },
+      q23: { correct: "C", script: "Speaker 5: '...I'm going to improve my listening and speaking skills by staying with a host family in one of the countries — I haven't decided which yet — where they actually speak the language.'", whyCorrect: "C: She is spending two months abroad living with a host family to practice Spanish.", trap: "She has been studying Spanish for years, so she isn't starting from scratch (rules out A); her evening job is just to finance the trip (rules out F)." },
+
+      // Part 4
+      q24: { correct: "A", script: "Amelia: '...make most of the big decisions with the exception of more personal ones such as what the bride will wear or who will be invited...'", whyCorrect: "A: The bride's wedding gown is a strictly private personal decision outside her responsibilities.", trap: "She does negotiate fees with photographers (rules out B) and guides clients on ceremonies (rules out C)." },
+      q25: { correct: "A", script: "Amelia: '...in most cases it's more likely to be a question of them simply being too busy to do it without assistance.'", whyCorrect: "A: Modern couples are too time-constrained by work to handle the logistics themselves.", trap: "Hiring a planner does not save money overall because of professional fees (rules out C)." },
+      q26: { correct: "C", script: "Amelia: '...in my case it was after I'd been doing some voluntary work for a not-for-profit organisation setting up various kinds of entertainment for people in need.'", whyCorrect: "C: Organizing charity entertainment events inspired her transition into wedding planning.", trap: "She notes other people come from catering (rules out A) or their own weddings, but she is single (rules out B)." },
+      q27: { correct: "C", script: "Amelia: '...I suppose people can rely on me not to get upset or lose control of the situation if things go wrong at what is often a very emotional time for everyone.'", whyCorrect: "C: Her key personal strength is maintaining composure and poise in high-stress emotional moments.", trap: "She limits herself strictly to one wedding at a time rather than juggling multiple (rules out B)." },
+      q28: { correct: "B", script: "Amelia: '...some of my colleagues do, but I prefer to look at the overall budget with the clients and charge say a tenth of that [10%].'", whyCorrect: "B: She earns a percentage commission (typically 10%) calculated against the overall event budget.", trap: "She specifically avoids hourly billing (rules out A) and does not charge a uniform fixed fee (rules out C)." },
+      q29: { correct: "B", script: "Amelia: '...and in fact I never actually know when or even if I'm going to get another paycheck, so that's certainly a less positive side to the work.'", whyCorrect: "B: Unpredictable and irregular seasonal income without guaranteed salary is her main gripe.", trap: "Weekend and evening appointments do not bother her (rules out C), and winter provides ample downtime (rules out A)." },
+      q30: { correct: "A", script: "Amelia: '...they're far more likely to be impressed by shots of beautiful weddings planned and run by you... a picture really does say a thousand words.'", whyCorrect: "A: A visual portfolio of photographs documenting past successful ceremonies wins clients.", trap: "Couples rarely care about planning diplomas (rules out C) and photographic proof outweighs written references (rules out B)." }
+    };
+
+    // 3. 45-MINUTE COUNTDOWN TIMER
+    let timeLeft = 45 * 60;
+    const timerDisplay = document.getElementById('countdownTimer');
+
+    function startTimer() {
+      const interval = setInterval(() => {
+        if (timeLeft <= 0) {
+          clearInterval(interval);
+          timerDisplay.textContent = "00:00";
+          alert("Time is up! The listening test will now be evaluated.");
+          evaluateMasterExam();
+          return;
+        }
+        timeLeft--;
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        timerDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      }, 1000);
+    }
+
+    // 4. STAGE NAVIGATION (Part 1 -> Part 2 -> Part 3 -> Part 4)
+    let currentPart = 1;
+    let isEvaluated = false;
+
+    function navigateStage(step) {
+      const target = currentPart + step;
+      if (target >= 1 && target <= 4) {
+        showPart(target);
+      }
+    }
+
+    function showPart(partNum) {
+      currentPart = partNum;
+
+      document.querySelectorAll('.stage-block').forEach((stage, idx) => {
+        stage.classList.toggle('active', (idx + 1) === partNum);
+      });
+
+      document.getElementById('topPartIndicator').textContent = `Part ${partNum} of 4`;
+
+      const btnPrev = document.getElementById('btnPrevStage');
+      const btnNext = document.getElementById('btnNextStage');
+      const btnSubmit = document.getElementById('btnSubmitAll');
+      const btnHub = document.getElementById('btnReturnToHub');
+
+      btnPrev.disabled = (partNum === 1);
+      btnPrev.style.visibility = (partNum === 1) ? 'hidden' : 'visible';
+
+      if (partNum === 4) {
+        btnNext.style.display = 'none';
+        if (!isEvaluated) {
+          btnSubmit.style.display = 'inline-flex';
+          btnHub.style.display = 'none';
+        } else {
+          btnSubmit.style.display = 'none';
+          btnHub.style.display = 'inline-flex';
+        }
+      } else {
+        btnNext.style.display = 'inline-flex';
+        btnNext.textContent = `Next: Part ${partNum + 1} ➔`;
+        btnSubmit.style.display = 'none';
+        if (isEvaluated) {
+          btnHub.style.display = 'inline-flex';
+        }
+      }
+
+      // Switch Google Drive Player
+      const track = DRIVE_TRACKS[partNum];
+      document.getElementById('currentTrackTitle').textContent = `Audio Stream: ${track.title}`;
+      document.getElementById('driveAudioFrame').src = track.url;
+      document.getElementById('driveBackupLink').href = track.directUrl;
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 5. BOOKMARK TOGGLE
+    document.querySelectorAll('.bookmark-flag').forEach(star => {
+      star.addEventListener('click', () => star.classList.toggle('active'));
+    });
+
+    // 6. GLOBAL EVALUATION (Triggered ONLY in Part 4)
+    function evaluateMasterExam() {
+      let p1 = 0, p2 = 0, p3 = 0, p4 = 0;
+
+      // Grade Part 1 (q1–q8)
+      for (let i = 1; i <= 8; i++) {
+        const qKey = 'q' + i;
+        const selected = document.querySelector(`input[name="${qKey}"]:checked`);
+        const card = document.getElementById(`card_${qKey}`);
+        const labels = card.querySelectorAll('.option-interactive-row');
+        const diag = document.getElementById(`diag_${qKey}`);
+        const data = MASTER_DATA[qKey];
+
+        labels.forEach(l => {
+          l.classList.remove('highlight-correct', 'highlight-wrong');
+          const val = l.querySelector('input').value;
+          if (val === data.correct) l.classList.add('highlight-correct');
+          else if (selected && val === selected.value) l.classList.add('highlight-wrong');
+        });
+
+        if (selected && selected.value === data.correct) {
+          p1++;
+          diag.className = "diagnostic-panel-box correct";
+          diag.innerHTML = `
+            <div class="diag-title-line">✓ Correct Answer: Option ${data.correct}</div>
+            <div class="diag-script-quote"><strong>Audioscript Clue:</strong> ${data.script}</div>
+            <div><strong>Pedagogical Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        } else {
+          diag.className = "diagnostic-panel-box incorrect";
+          const chosen = selected ? selected.value : "None";
+          diag.innerHTML = `
+            <div class="diag-title-line">✗ Incorrect (Your choice: ${chosen} | Key: ${data.correct})</div>
+            <div class="diag-script-quote"><strong>Audioscript Evidence:</strong> ${data.script}</div>
+            <div><strong>Why this is correct:</strong> ${data.whyCorrect}</div>
+            <div style="margin-top:4px;"><strong>Distractor trap:</strong> ${data.trap}</div>
+          `;
+        }
+      }
+
+      // Grade Part 2 (q9–q18)
+      for (let i = 9; i <= 18; i++) {
+        const qKey = 'q' + i;
+        const input = document.getElementById(`gap_${i}`);
+        const val = input.value.trim().toLowerCase();
+        const diag = document.getElementById(`diag_${qKey}`);
+        const data = MASTER_DATA[qKey];
+
+        input.classList.remove('highlight-correct', 'highlight-wrong');
+        const isCorrect = data.valid.some(ans => val === ans.toLowerCase());
+
+        if (isCorrect) {
+          p2++;
+          input.classList.add('highlight-correct');
+          diag.className = "diagnostic-panel-box correct";
+          diag.innerHTML = `
+            <div class="diag-title-line">✓ Correct Gap: "${data.valid[0]}"</div>
+            <div class="diag-script-quote"><strong>Audioscript Clue:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        } else {
+          input.classList.add('highlight-wrong');
+          diag.className = "diagnostic-panel-box incorrect";
+          diag.innerHTML = `
+            <div class="diag-title-line">✗ Incorrect (Your input: "${input.value}" | Key: "${data.valid[0]}")</div>
+            <div class="diag-script-quote"><strong>Audioscript Evidence:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        }
+      }
+
+      // Grade Part 3 (q19–q23)
+      for (let i = 19; i <= 23; i++) {
+        const qKey = 'q' + i;
+        const select = document.getElementById(`match_${i}`);
+        const val = select.value;
+        const diag = document.getElementById(`diag_${qKey}`);
+        const data = MASTER_DATA[qKey];
+
+        select.style.borderColor = (val === data.correct) ? "var(--emerald-green)" : "var(--cambridge-red)";
+        if (val === data.correct) {
+          p3++;
+          diag.className = "diagnostic-panel-box correct";
+          diag.innerHTML = `
+            <div class="diag-title-line">✓ Correct Match: Speaker ${i - 18} ➔ Option ${data.correct}</div>
+            <div class="diag-script-quote"><strong>Audioscript Clue:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        } else {
+          diag.className = "diagnostic-panel-box incorrect";
+          diag.innerHTML = `
+            <div class="diag-title-line">✗ Incorrect Match: (Your choice: ${val || "None"} | Key: ${data.correct})</div>
+            <div class="diag-script-quote"><strong>Audioscript Evidence:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+            <div style="margin-top:4px;"><strong>Distractor trap:</strong> ${data.trap}</div>
+          `;
+        }
+      }
+
+      // Grade Part 4 (q24–q30)
+      for (let i = 24; i <= 30; i++) {
+        const qKey = 'q' + i;
+        const selected = document.querySelector(`input[name="${qKey}"]:checked`);
+        const card = document.getElementById(`card_${qKey}`);
+        const labels = card.querySelectorAll('.option-interactive-row');
+        const diag = document.getElementById(`diag_${qKey}`);
+        const data = MASTER_DATA[qKey];
+
+        labels.forEach(l => {
+          l.classList.remove('highlight-correct', 'highlight-wrong');
+          const val = l.querySelector('input').value;
+          if (val === data.correct) l.classList.add('highlight-correct');
+          else if (selected && val === selected.value) l.classList.add('highlight-wrong');
+        });
+
+        if (selected && selected.value === data.correct) {
+          p4++;
+          diag.className = "diagnostic-panel-box correct";
+          diag.innerHTML = `
+            <div class="diag-title-line">✓ Correct Answer: Option ${data.correct}</div>
+            <div class="diag-script-quote"><strong>Audioscript Clue:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        } else {
+          diag.className = "diagnostic-panel-box incorrect";
+          const chosen = selected ? selected.value : "None";
+          diag.innerHTML = `
+            <div class="diag-title-line">✗ Incorrect (Your choice: ${chosen} | Key: ${data.correct})</div>
+            <div class="diag-script-quote"><strong>Audioscript Evidence:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+            <div style="margin-top:4px;"><strong>Distractor trap:</strong> ${data.trap}</div>
+          `;
+        }
+      }
+
+      const grandTotal = p1 + p2 + p3 + p4;
+
+      // Update Modal
+      document.getElementById('grandScoreDisplay').textContent = `${grandTotal} / 30`;
+      document.getElementById('m_p1').textContent = `${p1}/8`;
+      document.getElementById('m_p2').textContent = `${p2}/10`;
+      document.getElementById('m_p3').textContent = `${p3}/5`;
+      document.getElementById('m_p4').textContent = `${p4}/7`;
+
+      saveScores(grandTotal, p1, p2, p3, p4);
+
+      isEvaluated = true;
+      document.getElementById('btnSubmitAll').style.display = 'none';
+      document.getElementById('btnReturnToHub').style.display = 'inline-flex';
+
+      document.getElementById('modalResultSheet').classList.add('active');
+    }
+
+    function saveScores(total, p1, p2, p3, p4) {
+      const STORAGE_KEY = "fce_listening_trainer_v1";
+      let session = {};
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) session = JSON.parse(stored);
+      } catch (e) {
+        session = {};
+      }
+
+      if (!session.listeningScores) session.listeningScores = {};
+      session.listeningScores["mock_04_complete"] = {
+        total: total,
+        part1: p1,
+        part2: p2,
+        part3: p3,
+        part4: p4,
+        completed: true,
+        timestamp: new Date().toLocaleDateString('en-GB')
+      };
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(session));
+    }
+
+    function closeModalAndStudy() {
+      document.getElementById('modalResultSheet').classList.remove('active');
+      showPart(1);
+    }
+
+    function returnToHub() {
+      window.location.href = './index.html';
+    }
+
+    // Launch Part 1 and Timer
+    showPart(1);
+    startTimer();
+  </script>
+</body>
+</html>

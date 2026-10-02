@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge B2 First • Complete Listening Mock 07 | Dr. Jesús Miguel Lima E. • JM ELT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'AnanthaSignature';
+      src: url('Anantha%20Signature%20For%20Personal%20Use.ttf') format('truetype'),
+           url('Anantha Signature For Personal Use.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --bg-canvas: #f1f5f9;
+      --surface-card: #ffffff;
+      --surface-subtle: #f8fafc;
+      --border-card: #e2e8f0;
+      --border-accent: #cbd5e1;
+
+      /* Royal & Cambridge Color Scheme */
+      --primary-blue: #1e40af;
+      --primary-blue-hover: #1d4ed8;
+      --primary-blue-light: #eff6ff;
+      --primary-blue-glow: rgba(30, 64, 175, 0.12);
+
+      --gold-royal: #b45309;
+      --gold-royal-light: #fef3c7;
+      --gold-border: #fcd34d;
+
+      --cambridge-red: #ba1c1c;
+      --cambridge-red-light: #fee2e2;
+
+      --emerald-green: #047857;
+      --emerald-green-light: #d1fae5;
+
+      --text-dark: #0f172a;
+      --text-body: #334155;
+      --text-muted: #64748b;
+
+      --shadow-premium: 0 10px 30px -5px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+      --shadow-card: 0 4px 16px rgba(15, 23, 42, 0.05);
+      --shadow-modal: 0 25px 50px -12px rgba(15, 23, 42, 0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-dark);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 18px;
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(30, 64, 175, 0.06) 0px, transparent 40%),
+        radial-gradient(at 100% 100%, rgba(180, 83, 9, 0.06) 0px, transparent 40%),
+        radial-gradient(at 50% 50%, rgba(220, 38, 38, 0.03) 0px, transparent 60%);
+    }
+
+    /* OUTER ARCHITECTURAL FRAME WRAPPER */
+    .master-frame-wrapper {
+      max-width: 1440px;
+      margin: 16px auto 30px auto;
+      width: 96%;
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-top: 5px solid var(--primary-blue);
+      border-radius: 18px;
+      box-shadow: var(--shadow-premium);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - 40px);
+    }
+
+    /* TOP HEADER */
+    header.exam-top-bar {
+      background: #ffffff;
+      border-bottom: 2px solid var(--border-card);
+      padding: 16px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.03);
+    }
+
+    .brand-cluster {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .cambridge-crest-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .cambridge-crest {
+      width: 32px;
+      height: 34px;
+      fill: var(--cambridge-red);
+    }
+
+    .cambridge-titles {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .cambridge-titles .title-main {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 19px;
+      letter-spacing: -0.3px;
+      color: var(--text-dark);
+    }
+
+    .cambridge-titles .title-sub {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--cambridge-red);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .candidate-identity-divider {
+      border-left: 2px solid var(--border-card);
+      padding-left: 22px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author-name-tag {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--primary-blue);
+      letter-spacing: -0.2px;
+    }
+
+    .author-sub-tag {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold-royal);
+    }
+
+    .exam-status-cluster {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* 45-MINUTE COUNTDOWN TIMER */
+    .cb-timer-capsule {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      font-weight: 800;
+      background: var(--primary-blue-light);
+      border: 2px solid var(--primary-blue);
+      color: var(--primary-blue);
+      padding: 6px 16px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 8px var(--primary-blue-glow);
+    }
+
+    .part-progress-pill {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14.5px;
+      font-weight: 800;
+      background: var(--gold-royal-light);
+      border: 1.5px solid var(--gold-border);
+      color: var(--gold-royal);
+      padding: 6px 16px;
+      border-radius: 30px;
+    }
+
+    /* UNIFIED CONTINUOUS AUDIO STRIP */
+    .audio-hero-strip {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border-bottom: 2px solid var(--border-card);
+      padding: 20px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-left: 6px solid var(--gold-royal);
+    }
+
+    .audio-strip-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .audio-meta-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .audio-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--primary-blue-light);
+      border: 2px solid var(--primary-blue);
+      color: var(--primary-blue);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+    }
+
+    .audio-titles h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-dark);
+    }
+
+    .audio-titles span {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .listens-quota-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 800;
+      background: var(--gold-royal-light);
+      border: 1.5px solid var(--gold-border);
+      color: var(--gold-royal);
+      padding: 6px 14px;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* GOOGLE DRIVE IFRAME (200PX HEIGHT - ZERO CLIPPING) */
+    .drive-player-viewport {
+      width: 100%;
+      height: 200px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #cbd5e1;
+      background: #000000;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    .drive-player-viewport iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .drive-popout-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      align-self: flex-start;
+    }
+
+    .drive-popout-link:hover {
+      text-decoration: underline;
+    }
+
+    /* MAIN EXAM VIEWPORT */
+    main.exam-viewport {
+      flex: 1;
+      padding: 30px 36px 50px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+    }
+
+    .stage-block {
+      display: none;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .stage-block.active {
+      display: flex;
+    }
+
+    /* INSTRUCTION BANNER */
+    .instruction-callout-card {
+      background: var(--primary-blue-light);
+      border: 2px solid #bfdbfe;
+      border-left: 6px solid var(--primary-blue);
+      border-radius: 14px;
+      padding: 22px 28px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .instruction-callout-card h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary-blue);
+      margin-bottom: 4px;
+    }
+
+    .instruction-callout-card p {
+      font-size: 17.5px;
+      color: #1e3a8a;
+      font-weight: 500;
+    }
+
+    /* QUESTION CARDS */
+    .questions-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .question-card-box {
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 14px;
+      padding: 26px 30px;
+      box-shadow: var(--shadow-card);
+      transition: all 0.2s ease;
+    }
+
+    .question-card-box:focus-within {
+      border-color: var(--primary-blue);
+      box-shadow: 0 8px 24px var(--primary-blue-glow);
+    }
+
+    .q-head-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .q-number-cube {
+      background: var(--primary-blue);
+      color: #ffffff;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 900;
+      font-size: 18px;
+      min-width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(30, 64, 175, 0.3);
+    }
+
+    .q-scenario-title {
+      font-weight: 800;
+      font-size: 20px;
+      color: var(--text-dark);
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    .bookmark-flag {
+      font-size: 22px;
+      color: #cbd5e1;
+      cursor: pointer;
+      user-select: none;
+      transition: color 0.15s;
+    }
+
+    .bookmark-flag.active {
+      color: var(--gold-royal);
+    }
+
+    .q-core-prompt {
+      font-weight: 700;
+      font-size: 19px;
+      color: var(--primary-blue);
+      margin-left: 58px;
+      margin-bottom: 18px;
+    }
+
+    .options-pill-stack {
+      margin-left: 58px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 1050px;
+    }
+
+    .option-interactive-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 20px;
+      background: var(--surface-subtle);
+      border: 2px solid var(--border-card);
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-dark);
+      transition: all 0.15s ease;
+      user-select: none;
+    }
+
+    .option-interactive-row:hover {
+      background: #ffffff;
+      border-color: var(--primary-blue);
+      color: var(--primary-blue);
+      transform: translateX(4px);
+    }
+
+    .option-interactive-row input[type="radio"] {
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border: 2.5px solid #64748b;
+      border-radius: 50%;
+      outline: none;
+      display: grid;
+      place-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      background: #ffffff;
+      transition: border-color 0.15s;
+    }
+
+    .option-interactive-row input[type="radio"]::before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      transform: scale(0);
+      background: var(--primary-blue);
+      transition: transform 0.15s ease-in-out;
+    }
+
+    .option-interactive-row input[type="radio"]:checked {
+      border-color: var(--primary-blue);
+    }
+
+    .option-interactive-row input[type="radio"]:checked::before {
+      transform: scale(1);
+    }
+
+    /* PART 2 SENTENCE COMPLETION */
+    .passage-card-enclosure {
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 16px;
+      padding: 36px 42px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .passage-main-headline {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+      text-align: center;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--border-card);
+    }
+
+    .gap-line-item {
+      margin-bottom: 26px;
+      font-size: 19px;
+      line-height: 2.3;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .gap-line-item strong.gap-idx {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      color: var(--primary-blue);
+      background: var(--primary-blue-light);
+      border: 1px solid #bfdbfe;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .gap-interactive-field {
+      display: inline-block;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--primary-blue);
+      background: var(--surface-subtle);
+      border: 2px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 6px 14px;
+      outline: none;
+      min-width: 220px;
+      margin: 0 6px;
+      transition: all 0.2s;
+    }
+
+    .gap-interactive-field:focus {
+      background: #ffffff;
+      border-color: var(--primary-blue);
+      box-shadow: 0 0 0 3px var(--primary-blue-glow);
+    }
+
+    /* PART 3 MULTIPLE MATCHING */
+    .matching-legend-enclosure {
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 14px;
+      padding: 24px 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 26px;
+      font-size: 17.5px;
+      box-shadow: var(--shadow-card);
+    }
+
+    @media (max-width: 860px) {
+      .matching-legend-enclosure {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .matching-badge-letter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--gold-royal-light);
+      border: 2px solid var(--gold-royal);
+      color: var(--gold-royal);
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      font-size: 16px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+
+    .matching-selector-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 26px;
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 14px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .matching-speaker-text {
+      font-weight: 800;
+      font-size: 19px;
+      color: var(--text-dark);
+    }
+
+    .matching-drop-menu {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 800;
+      font-size: 18px;
+      padding: 8px 18px;
+      border: 2px solid #cbd5e1;
+      border-radius: 8px;
+      background: var(--surface-subtle);
+      color: var(--primary-blue);
+      outline: none;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .matching-drop-menu:focus {
+      border-color: var(--primary-blue);
+      background: #ffffff;
+    }
+
+    /* POST-EXAM DIAGNOSTIC FEEDBACK */
+    .diagnostic-panel-box {
+      display: none;
+      margin-top: 18px;
+      padding: 20px 24px;
+      border-radius: 12px;
+      font-size: 16.5px;
+      line-height: 1.6;
+    }
+
+    .diagnostic-panel-box.correct {
+      display: block;
+      background: var(--emerald-green-light);
+      border-left: 6px solid var(--emerald-green);
+      color: #065f46;
+    }
+
+    .diagnostic-panel-box.incorrect {
+      display: block;
+      background: var(--cambridge-red-light);
+      border-left: 6px solid var(--cambridge-red);
+      color: #991b1b;
+    }
+
+    .diag-title-line {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 18.5px;
+      margin-bottom: 8px;
+    }
+
+    .diag-script-quote {
+      font-style: italic;
+      color: #1e293b;
+      margin-bottom: 8px;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+
+    /* HIGHLIGHT ANSWERS ON EVALUATION */
+    .option-interactive-row.highlight-correct {
+      background: var(--emerald-green-light) !important;
+      border-color: var(--emerald-green) !important;
+      color: #065f46 !important;
+      font-weight: 800;
+    }
+
+    .option-interactive-row.highlight-wrong {
+      background: var(--cambridge-red-light) !important;
+      border-color: var(--cambridge-red) !important;
+      color: #991b1b !important;
+      text-decoration: line-through;
+    }
+
+    .gap-interactive-field.highlight-correct {
+      background: var(--emerald-green-light) !important;
+      border-color: var(--emerald-green) !important;
+      color: #065f46 !important;
+    }
+
+    .gap-interactive-field.highlight-wrong {
+      background: var(--cambridge-red-light) !important;
+      border-color: var(--cambridge-red) !important;
+      color: #991b1b !important;
+    }
+
+    /* NAVIGATION BUTTON BAR */
+    .exam-nav-toolbar-row {
+      margin-top: 36px;
+      margin-bottom: 30px;
+      background: #ffffff;
+      border: 2px solid var(--border-card);
+      border-radius: 12px;
+      padding: 18px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: var(--shadow-card);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .nav-actions-group-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-action-nav {
+      font-family: 'Outfit', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 13px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 2px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .btn-action-nav.back {
+      background: var(--surface-subtle);
+      border-color: var(--border-card);
+      color: var(--text-dark);
+    }
+
+    .btn-action-nav.back:hover {
+      background: #ffffff;
+      border-color: var(--primary-blue);
+      color: var(--primary-blue);
+    }
+
+    .btn-action-nav.forward {
+      background: linear-gradient(135deg, var(--primary-blue) 0%, #2563eb 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(30, 64, 175, 0.35);
+    }
+
+    .btn-action-nav.forward:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(30, 64, 175, 0.45);
+    }
+
+    .btn-action-nav.finish {
+      background: linear-gradient(135deg, var(--gold-royal) 0%, #d97706 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(180, 83, 9, 0.35);
+    }
+
+    .btn-action-nav.finish:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(180, 83, 9, 0.45);
+    }
+
+    .btn-action-nav.hub-return {
+      background: linear-gradient(135deg, var(--emerald-green) 0%, #059669 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(4, 120, 87, 0.35);
+      border-color: #047857;
+    }
+
+    .btn-action-nav.hub-return:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(4, 120, 87, 0.5);
+    }
+
+    /* INSTITUTIONAL FOOTER */
+    footer.institutional-master-footer {
+      background: #0f172a;
+      border-top: 2px solid #1e293b;
+      padding: 18px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #94a3b8;
+      font-size: 14.5px;
+      margin-top: auto;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .institutional-master-footer strong {
+      color: #f8fafc;
+    }
+
+    .institutional-master-footer .trainer-title {
+      color: var(--gold-border);
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* FINAL EVALUATION MODAL */
+    .modal-backdrop-veil {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(8px);
+      display: none;
+      place-items: center;
+      z-index: 200;
+    }
+
+    .modal-backdrop-veil.active {
+      display: grid;
+    }
+
+    .modal-window-box {
+      background: #ffffff;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-modal);
+      border: 3px solid var(--border-card);
+      padding: 34px 40px;
+      text-align: center;
+    }
+
+    .modal-grand-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .modal-big-score {
+      font-size: 56px;
+      font-weight: 900;
+      color: var(--primary-blue);
+      margin: 14px 0;
+      font-family: 'JetBrains Mono', monospace;
+      line-height: 1;
+    }
+
+    .modal-breakdown-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 22px 0;
+    }
+
+    .breakdown-pill-box {
+      background: var(--surface-subtle);
+      border: 2px solid var(--border-card);
+      border-radius: 10px;
+      padding: 10px 4px;
+    }
+
+    .breakdown-pill-box span {
+      display: block;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      font-weight: 700;
+    }
+
+    .breakdown-pill-box strong {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 18px;
+      color: var(--text-dark);
+    }
+
+    .modal-explanation-p {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+
+    .modal-actions-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MASTER FRAME ENCLOSURE -->
+  <div class="master-frame-wrapper">
+
+    <!-- TOP HEADER -->
+    <header class="exam-top-bar">
+      <div class="brand-cluster">
+        <a href="./index.html" class="cambridge-crest-box">
+          <svg class="cambridge-crest" viewBox="0 0 24 24">
+            <path d="M12 2L4 5v6.09c0 5.05 3.41 9.76 8 10.91 4.59-1.15 8-5.86 8-10.91V5l-8-3zm0 2.18l6 2.25v4.66c0 4.14-2.73 8.02-6 9.11-3.27-1.09-6-4.97-6-9.11V6.43l6-2.25z"/>
+          </svg>
+          <div class="cambridge-titles">
+            <span class="title-main">CAMBRIDGE ENGLISH</span>
+            <span class="title-sub">B2 First Assessment • Mock 07</span>
+          </div>
+        </a>
+
+        <div class="candidate-identity-divider">
+          <span class="author-name-tag">Dr. Jesús Miguel Lima E. • JM ELT Solutions</span>
+          <span class="author-sub-tag">Candidate ID: B2-FCET-09</span>
+        </div>
+      </div>
+
+      <div class="exam-status-cluster">
+        <!-- 45-MINUTE COUNTDOWN TIMER -->
+        <div class="cb-timer-capsule" title="Official Exam Time Remaining">
+          <span>⏱</span>
+          <span id="countdownTimer">45:00</span>
+        </div>
+
+        <span class="part-progress-pill" id="topPartIndicator">Part 1 of 4</span>
+      </div>
+    </header>
+
+    <!-- UNIFIED CONTINUOUS DRIVE AUDIO SUITE (200PX HEIGHT - ZERO CLIPPING) -->
+    <div class="audio-hero-strip">
+      <div class="audio-strip-top">
+        <div class="audio-meta-left">
+          <div class="audio-icon-box">🎧</div>
+          <div class="audio-titles">
+            <h3 id="currentTrackTitle">Complete Listening Exam Stream • Parts 1 to 4</h3>
+            <span>Continuous Official Recording • Google Drive Master Stream Player</span>
+          </div>
+        </div>
+
+        <div class="listens-quota-badge">
+          <span>🔁</span> Continuous Master Audio (Parts 1–4)
+        </div>
+      </div>
+
+      <!-- Drive Native Embed with 200px Height so Volume Slider & Track Never Clip -->
+      <div class="drive-player-viewport">
+        <iframe id="driveAudioFrame" src="https://drive.google.com/file/d/1Vf2O9DJz38g8hsh2bcxH1F2X8lGHiRgF/preview" allow="autoplay"></iframe>
+      </div>
+
+      <a id="driveBackupLink" href="https://drive.google.com/file/d/1Vf2O9DJz38g8hsh2bcxH1F2X8lGHiRgF/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="drive-popout-link">
+        ↗ Open master audio file directly in Google Drive
+      </a>
+    </div>
+
+    <!-- MAIN EXAM VIEWPORT -->
+    <main class="exam-viewport">
+      <form id="masterExamForm">
+
+        <!-- ================= PART 1 (Questions 1–8) ================= -->
+        <section class="stage-block active" id="stage_1">
+          <div class="instruction-callout-card">
+            <h2>Questions 1–8</h2>
+            <p>You will hear people talking in eight different situations. For questions <strong>1–8</strong>, choose the best answer (<strong>A</strong>, <strong>B</strong> or <strong>C</strong>). In the official Cambridge exam, you will hear each piece twice. (1 mark per question).</p>
+          </div>
+
+          <div class="questions-stack">
+            <!-- Q1 -->
+            <div class="question-card-box" id="card_q1">
+              <div class="q-head-line">
+                <span class="q-number-cube">1</span>
+                <span class="q-scenario-title">You hear a man talking about planting flower seeds in his garden.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">When does he expect them to grow?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q1" value="A"><span>June</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q1" value="B"><span>May</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q1" value="C"><span>April</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q1"></div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="question-card-box" id="card_q2">
+              <div class="q-head-line">
+                <span class="q-number-cube">2</span>
+                <span class="q-scenario-title">You hear two friends talking about when they last met.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">What was the occasion?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q2" value="A"><span>a birthday party</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q2" value="B"><span>a wedding</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q2" value="C"><span>a Christmas party</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q2"></div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="question-card-box" id="card_q3">
+              <div class="q-head-line">
+                <span class="q-number-cube">3</span>
+                <span class="q-scenario-title">You hear a woman talking about the kind of book she currently enjoys reading.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">What kind of book is it?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q3" value="A"><span>romance</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q3" value="B"><span>detective novel</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q3" value="C"><span>fairytale</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q3"></div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="question-card-box" id="card_q4">
+              <div class="q-head-line">
+                <span class="q-number-cube">4</span>
+                <span class="q-scenario-title">You hear two friends discussing the sports they play.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">Which sport do they most enjoy playing?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q4" value="A"><span>basketball</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q4" value="B"><span>tennis</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q4" value="C"><span>volleyball</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q4"></div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="question-card-box" id="card_q5">
+              <div class="q-head-line">
+                <span class="q-number-cube">5</span>
+                <span class="q-scenario-title">You hear a shop assistant talking to a customer.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">What is the customer looking for?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q5" value="A"><span>a shirt</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q5" value="B"><span>a suit</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q5" value="C"><span>a sweater</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q5"></div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="question-card-box" id="card_q6">
+              <div class="q-head-line">
+                <span class="q-number-cube">6</span>
+                <span class="q-scenario-title">You hear a man talking about his job as a lighting technician in a theatre.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">How does he feel about tonight's performance?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q6" value="A"><span>concerned about making mistakes</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q6" value="B"><span>surprised to be so nervous about the experience</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q6" value="C"><span>excited about working in live theatre</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q6"></div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="question-card-box" id="card_q7">
+              <div class="q-head-line">
+                <span class="q-number-cube">7</span>
+                <span class="q-scenario-title">You hear a boy talking about school.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">Which subject does he like best?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q7" value="A"><span>maths</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q7" value="B"><span>art</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q7" value="C"><span>history</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q7"></div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="question-card-box" id="card_q8">
+              <div class="q-head-line">
+                <span class="q-number-cube">8</span>
+                <span class="q-scenario-title">You hear a travel agent talking about a journey.</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="q-core-prompt">What is the customer's final destination?</div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q8" value="A"><span>Houston</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q8" value="B"><span>New York</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q8" value="C"><span>Los Angeles</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q8"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PART 2 (Questions 9–18) ================= -->
+        <section class="stage-block" id="stage_2">
+          <div class="instruction-callout-card">
+            <h2>Questions 9–18</h2>
+            <p>You will hear a man called Tom Botham giving a talk about newspaper journalism. For questions <strong>9–18</strong>, complete the sentences with a word or short phrase. Write directly into the fields. (1 mark per gap).</p>
+          </div>
+
+          <div class="passage-card-enclosure">
+            <div class="passage-main-headline">Journalism</div>
+
+            <div class="gap-line-item">
+              Tom mentions business, news, sport and <strong class="gap-idx">(9)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_9" placeholder="answer 9"> 
+              as examples of what journalists write about.
+              <div class="diagnostic-panel-box" id="diag_q9"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Many journalists have a degree in journalism, though Tom took his in <strong class="gap-idx">(10)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_10" placeholder="answer 10">.
+              <div class="diagnostic-panel-box" id="diag_q10"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Tom says it's important to gain a certificate in reporting, carrying out <strong class="gap-idx">(11)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_11" placeholder="answer 11"> 
+              and editing.
+              <div class="diagnostic-panel-box" id="diag_q11"></div>
+            </div>
+
+            <div class="gap-line-item">
+              When applying for a job, Tom says you need to show a selection of <strong class="gap-idx">(12)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_12" placeholder="answer 12"> 
+              you've written.
+              <div class="diagnostic-panel-box" id="diag_q12"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Tom got experience of writing by working as a <strong class="gap-idx">(13)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_13" placeholder="answer 13"> 
+              on a student magazine.
+              <div class="diagnostic-panel-box" id="diag_q13"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Tom says journalists must have good communication and <strong class="gap-idx">(14)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_14" placeholder="answer 14"> 
+              skills, in addition to personal characteristics such as motivation.
+              <div class="diagnostic-panel-box" id="diag_q14"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Tom was able to demonstrate to employers his experience of <strong class="gap-idx">(15)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_15" placeholder="answer 15">.
+              <div class="diagnostic-panel-box" id="diag_q15"></div>
+            </div>
+
+            <div class="gap-line-item">
+              As a junior reporter, Tom was pleased to attend <strong class="gap-idx">(16)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_16" placeholder="answer 16"> 
+              as well as other local events.
+              <div class="diagnostic-panel-box" id="diag_q16"></div>
+            </div>
+
+            <div class="gap-line-item">
+              In Tom's present job, he has a range of responsibilities and most enjoys doing <strong class="gap-idx">(17)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_17" placeholder="answer 17">.
+              <div class="diagnostic-panel-box" id="diag_q17"></div>
+            </div>
+
+            <div class="gap-line-item">
+              Tom is currently exploring the idea of working as a <strong class="gap-idx">(18)</strong> 
+              <input type="text" class="gap-interactive-field" id="gap_18" placeholder="answer 18"> 
+              on the paper.
+              <div class="diagnostic-panel-box" id="diag_q18"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= PART 3 (Questions 19–23) ================= -->
+        <section class="stage-block" id="stage_3">
+          <div class="instruction-callout-card">
+            <h2>Questions 19–23</h2>
+            <p>You will hear five short extracts in which people are talking about their favourite films. For questions <strong>19–23</strong>, choose from the list (<strong>A–H</strong>) the reason each speaker gives for his or her preference. Use the letters only once. There are three extra letters. (1 mark per item).</p>
+          </div>
+
+          <div class="matching-legend-enclosure">
+            <div><span class="matching-badge-letter">A</span> It has a complex storyline.</div>
+            <div><span class="matching-badge-letter">B</span> You want to know what happens next.</div>
+            <div><span class="matching-badge-letter">C</span> It is highly amusing.</div>
+            <div><span class="matching-badge-letter">D</span> It has an unexpected ending.</div>
+            <div><span class="matching-badge-letter">E</span> It is very true to life.</div>
+            <div><span class="matching-badge-letter">F</span> The special effects are interesting.</div>
+            <div><span class="matching-badge-letter">G</span> The acting is outstanding.</div>
+            <div><span class="matching-badge-letter">H</span> It has an unusual theme.</div>
+          </div>
+
+          <div class="questions-stack" style="margin-top:14px;">
+            <!-- Speaker 1 -->
+            <div class="matching-selector-box" id="card_q19">
+              <span class="matching-speaker-text">Speaker 1 (Question 19)</span>
+              <select class="matching-drop-menu" id="match_19">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q19"></div>
+
+            <!-- Speaker 2 -->
+            <div class="matching-selector-box" id="card_q20">
+              <span class="matching-speaker-text">Speaker 2 (Question 20)</span>
+              <select class="matching-drop-menu" id="match_20">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q20"></div>
+
+            <!-- Speaker 3 -->
+            <div class="matching-selector-box" id="card_q21">
+              <span class="matching-speaker-text">Speaker 3 (Question 21)</span>
+              <select class="matching-drop-menu" id="match_21">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q21"></div>
+
+            <!-- Speaker 4 -->
+            <div class="matching-selector-box" id="card_q22">
+              <span class="matching-speaker-text">Speaker 4 (Question 22)</span>
+              <select class="matching-drop-menu" id="match_22">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q22"></div>
+
+            <!-- Speaker 5 -->
+            <div class="matching-selector-box" id="card_q23">
+              <span class="matching-speaker-text">Speaker 5 (Question 23)</span>
+              <select class="matching-drop-menu" id="match_23">
+                <option value="">Select (A–H)</option>
+                <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
+                <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
+              </select>
+            </div>
+            <div class="diagnostic-panel-box" id="diag_q23"></div>
+          </div>
+        </section>
+
+        <!-- ================= PART 4 (Questions 24–30) ================= -->
+        <section class="stage-block" id="stage_4">
+          <div class="instruction-callout-card">
+            <h2>Questions 24–30</h2>
+            <p>You will hear part of a radio interview with a woman called Alice Barker, who has a rare condition called synaesthesia. For questions <strong>24–30</strong>, choose the best answer (<strong>A</strong>, <strong>B</strong> or <strong>C</strong>). (1 mark per item).</p>
+          </div>
+
+          <div class="questions-stack">
+            <!-- Q24 -->
+            <div class="question-card-box" id="card_q24">
+              <div class="q-head-line">
+                <span class="q-number-cube">24</span>
+                <span class="q-scenario-title">Alice describes her ability as</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q24" value="A"><span>connecting emotions and words.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q24" value="B"><span>linking colours and emotions.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q24" value="C"><span>connecting colours with words.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q24"></div>
+            </div>
+
+            <!-- Q25 -->
+            <div class="question-card-box" id="card_q25">
+              <div class="q-head-line">
+                <span class="q-number-cube">25</span>
+                <span class="q-scenario-title">We are told that Alice developed this condition</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q25" value="A"><span>because it is in her family.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q25" value="B"><span>when she was a child.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q25" value="C"><span>when she had children.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q25"></div>
+            </div>
+
+            <!-- Q26 -->
+            <div class="question-card-box" id="card_q26">
+              <div class="q-head-line">
+                <span class="q-number-cube">26</span>
+                <span class="q-scenario-title">When she was younger, Alice and her brother</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q26" value="A"><span>used to think they were going mad.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q26" value="B"><span>would argue about the colours connected with words.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q26" value="C"><span>saw the same colours for certain words.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q26"></div>
+            </div>
+
+            <!-- Q27 -->
+            <div class="question-card-box" id="card_q27">
+              <div class="q-head-line">
+                <span class="q-number-cube">27</span>
+                <span class="q-scenario-title">Alice says that this ability</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q27" value="A"><span>is directly associated with her moods.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q27" value="B"><span>can make her feel depressed.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q27" value="C"><span>makes her feelings more intense.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q27"></div>
+            </div>
+
+            <!-- Q28 -->
+            <div class="question-card-box" id="card_q28">
+              <div class="q-head-line">
+                <span class="q-number-cube">28</span>
+                <span class="q-scenario-title">What is the effect of Alice's condition on her reading?</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q28" value="A"><span>It makes her read more descriptions of colours.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q28" value="B"><span>It can encourage her to reread a sentence.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q28" value="C"><span>It makes her avoid sentences with bright descriptions.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q28"></div>
+            </div>
+
+            <!-- Q29 -->
+            <div class="question-card-box" id="card_q29">
+              <div class="q-head-line">
+                <span class="q-number-cube">29</span>
+                <span class="q-scenario-title">Alice feels that having this condition</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q29" value="A"><span>is very unpleasant at times.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q29" value="B"><span>is generally not a problem.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q29" value="C"><span>is not pleasant at all, on the whole.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q29"></div>
+            </div>
+
+            <!-- Q30 -->
+            <div class="question-card-box" id="card_q30">
+              <div class="q-head-line">
+                <span class="q-number-cube">30</span>
+                <span class="q-scenario-title">Doctors used to believe that this condition</span>
+                <span class="bookmark-flag" title="Bookmark">★</span>
+              </div>
+              <div class="options-pill-stack">
+                <label class="option-interactive-row"><input type="radio" name="q30" value="A"><span>made people insane.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q30" value="B"><span>only affected the insane.</span></label>
+                <label class="option-interactive-row"><input type="radio" name="q30" value="C"><span>indicated the person was going mad.</span></label>
+              </div>
+              <div class="diagnostic-panel-box" id="diag_q30"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FLOW-BASED NAVIGATION TOOLBAR -->
+        <div class="exam-nav-toolbar-row">
+          <button type="button" class="btn-action-nav back" id="btnPrevStage" onclick="navigateStage(-1)">
+            ← Previous Part
+          </button>
+
+          <div class="nav-actions-group-right">
+            <button type="button" class="btn-action-nav forward" id="btnNextStage" onclick="navigateStage(1)">
+              Next: Part 2 ➔
+            </button>
+            <button type="button" class="btn-action-nav finish" id="btnSubmitAll" style="display:none;" onclick="evaluateMasterExam()">
+              Finish & Submit Exam (30 Marks) ➔
+            </button>
+            <button type="button" class="btn-action-nav hub-return" id="btnReturnToHub" style="display:none;" onclick="returnToHub()">
+              Return to Roadmap Hub ➔
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </main>
+
+    <!-- INSTITUTIONAL MASTER FOOTER -->
+    <footer class="institutional-master-footer">
+      <div>
+        <span>Cambridge B2 First Examination Suite • All Rights Reserved © by </span>
+        <strong>Dr. Jesús Miguel Lima E. • JM ELT Solutions</strong>
+      </div>
+      <div class="trainer-title">Certified Cambridge CELTA & DELTA Trainer</div>
+    </footer>
+
+  </div>
+
+  <!-- RESULT & DIAGNOSTIC MODAL -->
+  <div class="modal-backdrop-veil" id="modalResultSheet">
+    <div class="modal-window-box">
+      <div style="font-family:'Outfit'; font-size:14px; font-weight:800; color:var(--primary-blue); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
+        Assessment Report • Mock 07
+      </div>
+      <h2 class="modal-grand-title">Diagnostic Results</h2>
+      <div class="modal-big-score" id="grandScoreDisplay">0 / 30</div>
+      
+      <div class="modal-breakdown-row">
+        <div class="breakdown-pill-box"><span>Part 1</span><strong id="m_p1">0/8</strong></div>
+        <div class="breakdown-pill-box"><span>Part 2</span><strong id="m_p2">0/10</strong></div>
+        <div class="breakdown-pill-box"><span>Part 3</span><strong id="m_p3">0/5</strong></div>
+        <div class="breakdown-pill-box"><span>Part 4</span><strong id="m_p4">0/7</strong></div>
+      </div>
+
+      <p class="modal-explanation-p">
+        Full pedagogical diagnosis has been unlocked across all 4 parts. You can review your answers, audioscript evidence, and distractor traps on screen, or return to the syllabus hub.
+      </p>
+
+      <div class="modal-actions-stack">
+        <button type="button" class="btn-action-nav hub-return" style="width:100%; justify-content:center;" onclick="returnToHub()">
+          Return to Roadmap Hub ➔
+        </button>
+        <button type="button" class="btn-action-nav back" style="width:100%; justify-content:center;" onclick="closeModalAndStudy()">
+          Review Detailed Answers on Screen
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. MASTER UNIFIED AUDIO TRACK (CONTINUOUS FOR ALL 4 PARTS)
+    const MASTER_AUDIO_URL = "https://drive.google.com/file/d/1Vf2O9DJz38g8hsh2bcxH1F2X8lGHiRgF/preview";
+    const MASTER_DIRECT_URL = "https://drive.google.com/file/d/1Vf2O9DJz38g8hsh2bcxH1F2X8lGHiRgF/view?usp=sharing";
+
+    // 2. MASTER PEDAGOGICAL DATABASE FOR TEST 3 (EXAM ESSENTIALS)
+    const MASTER_DATA = {
+      // Part 1
+      q1: { correct: "A", script: "Gardener: '...You wouldn't want to leave it as late as May to do any planting if you want to see the results by June though, you should have a lovely splash of color in the flower beds by then.'", whyCorrect: "A: He anticipates the visible growth and flowering results by June.", trap: "He plants early seeds in April to avoid frost, and warns not to wait until May." },
+      q2: { correct: "B", script: "Friend: '...wait a minute, it was at Peter's place when he and Jenny got married. Yes, of course it was, wasn't it a fantastic reception...'", whyCorrect: "B: Their last reunion occurred during Peter and Jenny's wedding reception.", trap: "One speaker missed Michael's 21st birthday due to flu, and their dinner three years ago was superseded by the wedding." },
+      q3: { correct: "C", script: "Reader: '...I've actually gone back to my childhood favorite recently. Simple fairy tales may not seem very grown up, but some of them are real classics.'", whyCorrect: "C: She currently takes pleasure in revisiting classic fairy tales from her childhood.", trap: "She used to enjoy crime mysteries but found them repetitive; romantic novels were previously preferred." },
+      q4: { correct: "B", script: "Friend: '...We shouldn't leave it so long until we play next time since it's our strongest sport [tennis]... no one puts their best efforts into sports they aren't so keen on [volleyball].'", whyCorrect: "B: Tennis is their strongest and most favored sport.", trap: "Volleyball was played yesterday with low enthusiasm, and basketball is something he prefers watching rather than playing." },
+      q5: { correct: "A", script: "Customer: '...I think I may abandon my search [for a sweater]... and concentrate on what I really came in for. I'm going to an important business event next week and need a shirt to go with my suit...'", whyCorrect: "A: The customer specifically came to purchase a formal shirt to pair with his suit.", trap: "He already owns the suit and decided against buying the sweater he tried on." },
+      q6: { correct: "C", script: "Technician: '...once everything's up and running I'll be able to enjoy it... It'll be a real buzz though, I've wanted to work in theater for so long.'", whyCorrect: "C: He feels thrilled and stimulated by the prospect of working in live theatrical productions.", trap: "He initially expected to feel nervous, but clarifies that he is not anxious because responsibility is shared." },
+      q7: { correct: "B", script: "Boy: '...I guess the highlight of the school day is art, that's where I really seem able to let my imagination take over.'", whyCorrect: "B: Art allows his imaginative faculties full expression, making it his favorite subject.", trap: "Maths comes easily without offering satisfying challenge, and he struggles with history dates." },
+      q8: { correct: "A", script: "Agent: '...getting you to Houston by Wednesday morning... flight to your final destination, which will be coming from Los Angeles.'", whyCorrect: "A: Houston is the passenger's intended terminal destination.", trap: "Amsterdam and New York (JFK) are intermediate stopovers, and the connecting aircraft originates from Los Angeles." },
+
+      // Part 2
+      q9: { valid: ["culture"], script: "Tom: '...everything from news and business to culture and sport.'", whyCorrect: "Cultural affairs form one of the central topics covered by newspaper reporting." },
+      q10: { valid: ["economics"], script: "Tom: '...degrees in other subjects such as economics, which is the route I took...'", whyCorrect: "Tom completed his undergraduate university degree in economics." },
+      q11: { valid: ["interviews", "interviewing"], script: "Tom: '...basics of news reporting and my personal favorite, how to conduct interviews.'", whyCorrect: "Conducting professional interviews is a core qualification module." },
+      q12: { valid: ["articles"], script: "Tom: '...potential employers will want to see your portfolio, a collection of articles you've had published.'", whyCorrect: "Candidates must showcase published journalistic articles in their portfolio." },
+      q13: { valid: ["film critic"], script: "Tom: '...My own involvement was as a film critic and my best friend wrote features on student issues.'", whyCorrect: "Tom gained early journalistic clips reviewing cinema as a student film critic." },
+      q14: { valid: ["organisation", "organization"], script: "Tom: '...key skills such as organisation, oral communication and an ability to work under pressure...'", whyCorrect: "Effective personal organisation is vital alongside oral communication." },
+      q15: { valid: ["web design"], script: "Tom: '...My brother runs his own web design company and I'd been involved in that as a weekend job...'", whyCorrect: "Practical background in web design bolstered his transition to modern multimedia newsrooms." },
+      q16: { valid: ["football matches", "matches"], script: "Tom: '...I regularly got to go and watch football matches, which was a real bonus.'", whyCorrect: "Covering local football matches was one of the enjoyable perks of his junior reporting role." },
+      q17: { valid: ["research"], script: "Tom: '...I specialise in research, my preferred aspect of the role...'", whyCorrect: "In-depth investigative research represents his most rewarding responsibility." },
+      q18: { valid: ["photographer"], script: "Tom: '...I've actually tried something totally different and I'm looking into the possibilities of becoming a photographer here.'", whyCorrect: "He is currently exploring transitioning into press photography." },
+
+      // Part 3
+      q19: { correct: "C", script: "Speaker 1: '...the plot may sound silly and it's hardly what you'd call realistic, but the film is just hilarious... I just can't stop laughing.'", whyCorrect: "C: The continuous comedy and hilarity make it her favorite film.", trap: "She acknowledges the plot is unrealistic (rules out E) and the ending is fitting rather than shocking (rules out D)." },
+      q20: { correct: "G", script: "Speaker 2: '...The actors' performances were awe-inspiring, which is a good enough reason to see the film even if it isn't really your thing.'", whyCorrect: "G: Exceptional acting performances elevate the production above its genre.", trap: "The special effects were disappointing (rules out F), but the cast carried the film." },
+      q21: { correct: "F", script: "Speaker 3: '...the effects are not used just to impress the audience, there's a reason for them.'", whyCorrect: "F: Purposeful, intellectually integrated special effects enhance the narrative.", trap: "He appreciates the psychological depth, but singles out meaningful visual effects as key." },
+      q22: { correct: "B", script: "Speaker 4: '...you're on the edge of your seat the whole way through... but you still have to watch just to make sure [what happens next].'", whyCorrect: "B: Relentless suspense keeps the audience hooked to discover how events unfold.", trap: "The plot formula does not vary much (rules out H), and action is totally unrealistic (rules out E)." },
+      q23: { correct: "E", script: "Speaker 5: '...it really captures the way people feel and talk at any time through the history of mankind. This is what makes it absolutely realistic...'", whyCorrect: "E: Authentic psychological portrayal gives the film profound universal realism.", trap: "Cinematography is appealing, but historical truth to human nature defines its value." },
+
+      // Part 4
+      q24: { correct: "C", script: "Alice: '...basically when I read a word or even think of a particular word such as Tuesday, I see a color connected with it.'", whyCorrect: "C: Her synaesthesia manifests as perceiving vivid colours triggered by words.", trap: "Emotions are not what triggers the visual words; colours associate directly with lexical items." },
+      q25: { correct: "A", script: "Alice: '...apparently it's generally passed on from parents to their children, which is the case with me.'", whyCorrect: "A: She inherited the genetic condition from her family line.", trap: "She noticed it during childhood, but developed it due to hereditary transmission." },
+      q26: { correct: "B", script: "Alice: '...when we were younger we used to have arguments about things like what color the word Friday was.'", whyCorrect: "B: She and her brother engaged in childhood debates over which colour matched particular words.", trap: "Each synaesthete perceives distinct hues, meaning they did not share identical colour associations." },
+      q27: { correct: "A", script: "Alice: '...It does make you aware of your moods though. I know if I'm starting to feel depressed because things begin to look gray...'", whyCorrect: "A: Colour shifts serve as an internal gauge of emotional moods and mental states.", trap: "It alerts her to depression rather than creating it, allowing her to take preventive action." },
+      q28: { correct: "B", script: "Alice: '...sometimes a sentence has a very nice range of colors, so you want to read it again just to experience that.'", whyCorrect: "B: Harmonious colour combinations prompt her to reread enjoyable sentences.", trap: "She does not search for descriptions of colours, but rather visualises chromatic blends from prose." },
+      q29: { correct: "B", script: "Alice: '...but on the whole, having this condition is not at all unpleasant. At least now I understand it...'", whyCorrect: "B: She regards living with synaesthesia as manageable and non-problematic overall.", trap: "Spoken conversations can occasionally distract her, but she denies it is distressing or unpleasant." },
+      q30: { correct: "C", script: "Alice: '...doctors used to think it was a sign of approaching mental illness... told my parents I would probably grow up to be insane.'", whyCorrect: "C: Early clinical ignorance misconstrued synaesthesia as an indicator of encroaching madness.", trap: "Physicians warned it heralded future insanity, not that it only struck the already insane." }
+    };
+
+    // 3. 45-MINUTE COUNTDOWN TIMER
+    let timeLeft = 45 * 60;
+    const timerDisplay = document.getElementById('countdownTimer');
+
+    function startTimer() {
+      const interval = setInterval(() => {
+        if (timeLeft <= 0) {
+          clearInterval(interval);
+          timerDisplay.textContent = "00:00";
+          alert("Time is up! The listening test will now be evaluated.");
+          evaluateMasterExam();
+          return;
+        }
+        timeLeft--;
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        timerDisplay.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      }, 1000);
+    }
+
+    // 4. STAGE NAVIGATION (Part 1 -> Part 2 -> Part 3 -> Part 4)
+    let currentPart = 1;
+    let isEvaluated = false;
+
+    function navigateStage(step) {
+      const target = currentPart + step;
+      if (target >= 1 && target <= 4) {
+        showPart(target);
+      }
+    }
+
+    function showPart(partNum) {
+      currentPart = partNum;
+
+      document.querySelectorAll('.stage-block').forEach((stage, idx) => {
+        stage.classList.toggle('active', (idx + 1) === partNum);
+      });
+
+      document.getElementById('topPartIndicator').textContent = `Part ${partNum} of 4`;
+
+      const btnPrev = document.getElementById('btnPrevStage');
+      const btnNext = document.getElementById('btnNextStage');
+      const btnSubmit = document.getElementById('btnSubmitAll');
+      const btnHub = document.getElementById('btnReturnToHub');
+
+      btnPrev.disabled = (partNum === 1);
+      btnPrev.style.visibility = (partNum === 1) ? 'hidden' : 'visible';
+
+      if (partNum === 4) {
+        btnNext.style.display = 'none';
+        if (!isEvaluated) {
+          btnSubmit.style.display = 'inline-flex';
+          btnHub.style.display = 'none';
+        } else {
+          btnSubmit.style.display = 'none';
+          btnHub.style.display = 'inline-flex';
+        }
+      } else {
+        btnNext.style.display = 'inline-flex';
+        btnNext.textContent = `Next: Part ${partNum + 1} ➔`;
+        btnSubmit.style.display = 'none';
+        if (isEvaluated) {
+          btnHub.style.display = 'inline-flex';
+        }
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 5. BOOKMARK TOGGLE
+    document.querySelectorAll('.bookmark-flag').forEach(star => {
+      star.addEventListener('click', () => star.classList.toggle('active'));
+    });
+
+    // 6. GLOBAL EVALUATION (Triggered ONLY in Part 4)
+    function evaluateMasterExam() {
+      let p1 = 0, p2 = 0, p3 = 0, p4 = 0;
+
+      // Grade Part 1 (q1–q8)
+      for (let i = 1; i <= 8; i++) {
+        const qKey = 'q' + i;
+        const selected = document.querySelector(`input[name="${qKey}"]:checked`);
+        const card = document.getElementById(`card_${qKey}`);
+        const labels = card.querySelectorAll('.option-interactive-row');
+        const diag = document.getElementById(`diag_${qKey}`);
+        const data = MASTER_DATA[qKey];
+
+        labels.forEach(l => {
+          l.classList.remove('highlight-correct', 'highlight-wrong');
+          const val = l.querySelector('input').value;
+          if (val === data.correct) l.classList.add('highlight-correct');
+          else if (selected && val === selected.value) l.classList.add('highlight-wrong');
+        });
+
+        if (selected && selected.value === data.correct) {
+          p1++;
+          diag.className = "diagnostic-panel-box correct";
+          diag.innerHTML = `
+            <div class="diag-title-line">✓ Correct Answer: Option ${data.correct}</div>
+            <div class="diag-script-quote"><strong>Audioscript Clue:</strong> ${data.script}</div>
+            <div><strong>Pedagogical Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        } else {
+          diag.className = "diagnostic-panel-box incorrect";
+          const chosen = selected ? selected.value : "None";
+          diag.innerHTML = `
+            <div class="diag-title-line">✗ Incorrect (Your choice: ${chosen} | Key: ${data.correct})</div>
+            <div class="diag-script-quote"><strong>Audioscript Evidence:</strong> ${data.script}</div>
+            <div><strong>Why this is correct:</strong> ${data.whyCorrect}</div>
+            <div style="margin-top:4px;"><strong>Distractor trap:</strong> ${data.trap}</div>
+          `;
+        }
+      }
+
+      // Grade Part 2 (q9–q18)
+      for (let i = 9; i <= 18; i++) {
+        const qKey = 'q' + i;
+        const input = document.getElementById(`gap_${i}`);
+        const val = input.value.trim().toLowerCase();
+        const diag = document.getElementById(`diag_${qKey}`);
+        const data = MASTER_DATA[qKey];
+
+        input.classList.remove('highlight-correct', 'highlight-wrong');
+        const isCorrect = data.valid.some(ans => val === ans.toLowerCase());
+
+        if (isCorrect) {
+          p2++;
+          input.classList.add('highlight-correct');
+          diag.className = "diagnostic-panel-box correct";
+          diag.innerHTML = `
+            <div class="diag-title-line">✓ Correct Gap: "${data.valid[0]}"</div>
+            <div class="diag-script-quote"><strong>Audioscript Clue:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        } else {
+          input.classList.add('highlight-wrong');
+          diag.className = "diagnostic-panel-box incorrect";
+          diag.innerHTML = `
+            <div class="diag-title-line">✗ Incorrect (Your input: "${input.value}" | Key: "${data.valid[0]}")</div>
+            <div class="diag-script-quote"><strong>Audioscript Evidence:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        }
+      }
+
+      // Grade Part 3 (q19–q23)
+      for (let i = 19; i <= 23; i++) {
+        const qKey = 'q' + i;
+        const select = document.getElementById(`match_${i}`);
+        const val = select.value;
+        const diag = document.getElementById(`diag_${qKey}`);
+        const data = MASTER_DATA[qKey];
+
+        select.style.borderColor = (val === data.correct) ? "var(--emerald-green)" : "var(--cambridge-red)";
+        if (val === data.correct) {
+          p3++;
+          diag.className = "diagnostic-panel-box correct";
+          diag.innerHTML = `
+            <div class="diag-title-line">✓ Correct Match: Speaker ${i - 18} ➔ Option ${data.correct}</div>
+            <div class="diag-script-quote"><strong>Audioscript Clue:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        } else {
+          diag.className = "diagnostic-panel-box incorrect";
+          diag.innerHTML = `
+            <div class="diag-title-line">✗ Incorrect Match: (Your choice: ${val || "None"} | Key: ${data.correct})</div>
+            <div class="diag-script-quote"><strong>Audioscript Evidence:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+            <div style="margin-top:4px;"><strong>Distractor trap:</strong> ${data.trap}</div>
+          `;
+        }
+      }
+
+      // Grade Part 4 (q24–q30)
+      for (let i = 24; i <= 30; i++) {
+        const qKey = 'q' + i;
+        const selected = document.querySelector(`input[name="${qKey}"]:checked`);
+        const card = document.getElementById(`card_${qKey}`);
+        const labels = card.querySelectorAll('.option-interactive-row');
+        const diag = document.getElementById(`diag_${qKey}`);
+        const data = MASTER_DATA[qKey];
+
+        labels.forEach(l => {
+          l.classList.remove('highlight-correct', 'highlight-wrong');
+          const val = l.querySelector('input').value;
+          if (val === data.correct) l.classList.add('highlight-correct');
+          else if (selected && val === selected.value) l.classList.add('highlight-wrong');
+        });
+
+        if (selected && selected.value === data.correct) {
+          p4++;
+          diag.className = "diagnostic-panel-box correct";
+          diag.innerHTML = `
+            <div class="diag-title-line">✓ Correct Answer: Option ${data.correct}</div>
+            <div class="diag-script-quote"><strong>Audioscript Clue:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+          `;
+        } else {
+          diag.className = "diagnostic-panel-box incorrect";
+          const chosen = selected ? selected.value : "None";
+          diag.innerHTML = `
+            <div class="diag-title-line">✗ Incorrect (Your choice: ${chosen} | Key: ${data.correct})</div>
+            <div class="diag-script-quote"><strong>Audioscript Evidence:</strong> ${data.script}</div>
+            <div><strong>Analysis:</strong> ${data.whyCorrect}</div>
+            <div style="margin-top:4px;"><strong>Distractor trap:</strong> ${data.trap}</div>
+          `;
+        }
+      }
+
+      const grandTotal = p1 + p2 + p3 + p4;
+
+      // Update Modal
+      document.getElementById('grandScoreDisplay').textContent = `${grandTotal} / 30`;
+      document.getElementById('m_p1').textContent = `${p1}/8`;
+      document.getElementById('m_p2').textContent = `${p2}/10`;
+      document.getElementById('m_p3').textContent = `${p3}/5`;
+      document.getElementById('m_p4').textContent = `${p4}/7`;
+
+      saveScores(grandTotal, p1, p2, p3, p4);
+
+      isEvaluated = true;
+      document.getElementById('btnSubmitAll').style.display = 'none';
+      document.getElementById('btnReturnToHub').style.display = 'inline-flex';
+
+      document.getElementById('modalResultSheet').classList.add('active');
+    }
+
+    function saveScores(total, p1, p2, p3, p4) {
+      const STORAGE_KEY = "fce_listening_trainer_v1";
+      let session = {};
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) session = JSON.parse(stored);
+      } catch (e) {
+        session = {};
+      }
+
+      if (!session.listeningScores) session.listeningScores = {};
+      session.listeningScores["mock_07_complete"] = {
+        total: total,
+        part1: p1,
+        part2: p2,
+        part3: p3,
+        part4: p4,
+        completed: true,
+        timestamp: new Date().toLocaleDateString('en-GB')
+      };
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(session));
+    }
+
+    function closeModalAndStudy() {
+      document.getElementById('modalResultSheet').classList.remove('active');
+      showPart(1);
+    }
+
+    function returnToHub() {
+      window.location.href = './index.html';
+    }
+
+    // Launch Part 1 and Timer
+    showPart(1);
+    startTimer();
+  </script>
+</body>
+</html>
