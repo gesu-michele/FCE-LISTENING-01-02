@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cambridge B2 First (FCE) - Listening Mastery - Dr. Jesús Miguel Lima E.</title>
+  <title>Cambridge B2 First (FCE) - Listening Roadmap Suite - Dr. Jesús Miguel Lima E.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -346,7 +346,7 @@
       text-align: center;
       padding: 40px 20px;
       flex: 1;
-      max-width: 1080px;
+      max-width: 1140px;
       width: 100%;
       margin: 0 auto;
     }
@@ -427,7 +427,7 @@
     }
 
     .block-info h4 {
-      font-size: 15.5px;
+      font-size: 16px;
       color: #ffffff;
       margin-bottom: 4px;
       font-family: 'Inter', sans-serif;
@@ -435,7 +435,7 @@
     }
 
     .block-info span {
-      font-size: 12.5px;
+      font-size: 13px;
       color: var(--text-muted);
       line-height: 1.4;
       display: block;
@@ -465,9 +465,9 @@
 
     .btn-block-launch {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 11.5px;
+      font-size: 12px;
       font-weight: 800;
-      padding: 9px 15px;
+      padding: 10px 18px;
       border-radius: 6px;
       border: 1px solid var(--accent-blue-light);
       background: rgba(37, 99, 235, 0.25);
@@ -629,7 +629,7 @@
 
     <!-- INSTITUTIONAL FOOTER -->
     <div class="institutional-bottom">
-      <span>Cambridge B2 First: Listening Mastery Series (Parts 1, 2, 3 & 4)</span>
+      <span>Cambridge B2 First: Complete Mock Exam Series (Mocks 01–08)</span>
       <span>All Rights Reserved © by <strong>Dr. Jesús Miguel Lima E.</strong> • JM ELT Solutions</span>
     </div>
 
@@ -642,7 +642,7 @@
     let session = {
       firstName: "Teacher",
       coins: 100,
-      unlockedParts: ["mock_01_part_01"],
+      unlockedMocks: ["mock_01_complete"],
       listeningScores: {}
     };
 
@@ -657,11 +657,22 @@
         }
       }
 
-      if (!session.unlockedParts || session.unlockedParts.length === 0) {
-        session.unlockedParts = ["mock_01_part_01"];
+      if (!session.unlockedMocks || session.unlockedMocks.length === 0) {
+        session.unlockedMocks = ["mock_01_complete"];
       }
       if (!session.listeningScores) {
         session.listeningScores = {};
+      }
+
+      // Progression check: un mock aprobado/completado desbloquea automáticamente al siguiente
+      for (let i = 1; i <= 7; i++) {
+        const currentKey = `mock_0${i}_complete`;
+        const nextKey = `mock_0${i + 1}_complete`;
+        if (session.listeningScores[currentKey] && session.listeningScores[currentKey].completed) {
+          if (!session.unlockedMocks.includes(nextKey)) {
+            session.unlockedMocks.push(nextKey);
+          }
+        }
       }
 
       syncStorage();
@@ -695,7 +706,7 @@
         renderCover(mount);
       } else if (activeScreen === 2) {
         nav.style.display = 'flex';
-        track.innerText = 'Listening Mock 01 • Syllabus';
+        track.innerText = 'Mock Exams Roadmap (01–08)';
         renderCurriculum(mount);
       }
       syncStorage();
@@ -727,7 +738,7 @@
 
               <div class="welcome-text-block">
                 <p class="welcome-en">
-                  Welcome to the specialized Listening training suite for Cambridge B2 First. Master Part 1 (Short Extracts), Part 2 (Sentence Completion), Part 3 (Multiple Matching), and Part 4 (In-Depth Interview) through authentic British English audio streams, detailed discourse traps, and diagnostic pedagogical feedback.
+                  Welcome to the official full-length Listening training suite for Cambridge B2 First. Complete each sequential Mock Exam (Parts 1 to 4, 30 items) to unlock the next test in the series. Experience authentic exam timing, audioscript integration, and in-depth diagnostic feedback.
                 </p>
               </div>
             </div>
@@ -748,7 +759,7 @@
 
               <div class="cover-action-wrapper">
                 <button class="btn-launch-large" onclick="setScreen(2)">
-                  <span>🎧</span> Open Listening Syllabus ➔
+                  <span>🎧</span> Open Mock Roadmap ➔
                 </button>
               </div>
             </div>
@@ -759,81 +770,113 @@
     }
 
     function renderCurriculum(mount) {
-      const partsConfig = [
+      const mocksConfig = [
         {
           id: 1,
-          key: "mock_01_part_01",
-          partTitle: "Part 1 • Short Extracts (Multiple Choice)",
-          desc: "8 independent recorded situations • Questions 1–8 • Focus on main idea, feeling, attitude, and agreement.",
-          maxScore: 8,
-          fileName: "./MOCK 01 - LISTENING PART 01.html"
+          key: "mock_01_complete",
+          title: "Listening Mock Exam 01 • Complete Test",
+          desc: "Full Exam: Parts 1–4 (Questions 1–30) • Fiona Doyle, Countryside Life & Global Comprehension.",
+          maxScore: 30,
+          fileName: "./MOCK 01 - LISTENING COMPLETE.html"
         },
         {
           id: 2,
-          key: "mock_01_part_02",
-          partTitle: "Part 2 • Sentence Completion (Monologue)",
-          desc: "Fiona Doyle: Moving to the countryside • Questions 9–18 • Focus on locating specific information and target lexical gaps.",
-          maxScore: 10,
-          fileName: "./MOCK 01 - LISTENING PART 02.html"
+          key: "mock_02_complete",
+          title: "Listening Mock Exam 02 • Complete Test",
+          desc: "Full Exam: Parts 1–4 (Questions 1–30) • Authentic Cambridge exam tasks and diagnostic analysis.",
+          maxScore: 30,
+          fileName: "./MOCK 02 - LISTENING COMPLETE.html"
         },
         {
           id: 3,
-          key: "mock_01_part_03",
-          partTitle: "Part 3 • Multiple Matching (5 Speakers)",
-          desc: "Five people talking about difficult situations • Questions 19–23 • Identifying speaker actions and distinguishing distractors.",
-          maxScore: 5,
-          fileName: "./MOCK 01 - LISTENING PART 03.html"
+          key: "mock_03_complete",
+          title: "Listening Mock Exam 03 • Complete Test",
+          desc: "Full Exam: Parts 1–4 (Questions 1–30) • Rigorous multi-speaker matching and in-depth interviews.",
+          maxScore: 30,
+          fileName: "./MOCK 03 - LISTENING COMPLETE.html"
         },
         {
           id: 4,
-          key: "mock_01_part_04",
-          partTitle: "Part 4 • Longer Interview (Amy McCarthy)",
-          desc: "Travel writer on her first holiday abroad • Questions 24–30 • Complex gist, underlying opinion, and global comprehension.",
-          maxScore: 7,
-          fileName: "./MOCK 01 - LISTENING PART 04.html"
+          key: "mock_04_complete",
+          title: "Listening Mock Exam 04 • Complete Test",
+          desc: "Full Exam: Parts 1–4 (Questions 1–30) • Jessica Morton (Crossing the Desert), Wedding Planning & Audio Streams.",
+          maxScore: 30,
+          fileName: "./MOCK 04 - LISTENING COMPLETE.html"
+        },
+        {
+          id: 5,
+          key: "mock_05_complete",
+          title: "Listening Mock Exam 05 • Complete Test",
+          desc: "Full Exam: Parts 1–4 (Questions 1–30) • Museums for All, School Field Trips & Julia Emerson Interview.",
+          maxScore: 30,
+          fileName: "./MOCK 05 - LISTENING COMPLETE.html"
+        },
+        {
+          id: 6,
+          key: "mock_06_complete",
+          title: "Listening Mock Exam 06 • Complete Test",
+          desc: "Full Exam: Parts 1–4 (Questions 1–30) • Gaelic Revitalisation, Young Athletes & Mountain Climber Sam Hall.",
+          maxScore: 30,
+          fileName: "./MOCK 06 - LISTENING COMPLETE.html"
+        },
+        {
+          id: 7,
+          key: "mock_07_complete",
+          title: "Listening Mock Exam 07 • Complete Test",
+          desc: "Full Exam: Parts 1–4 (Questions 1–30) • Tom Botham (Journalism), Favourite Films & Synaesthesia.",
+          maxScore: 30,
+          fileName: "./MOCK 07 - LISTENING COMPLETE.html"
+        },
+        {
+          id: 8,
+          key: "mock_08_complete",
+          title: "Listening Mock Exam 08 • Complete Test",
+          desc: "Full Exam: Parts 1–4 (Questions 1–30) • Golfer John Freeman, Holiday Insights & Florist Laura Bartlett.",
+          maxScore: 30,
+          fileName: "./MOCK 08 - LISTENING COMPLETE.html"
         }
       ];
 
-      let completedCount = 0;
+      let completedMocksCount = 0;
       let totalEarnedScore = 0;
-      const totalPossibleScore = 30;
+      const totalPossibleScore = mocksConfig.length * 30;
 
-      partsConfig.forEach(p => {
-        const scoreData = session.listeningScores && session.listeningScores[p.key];
+      mocksConfig.forEach(m => {
+        const scoreData = session.listeningScores && session.listeningScores[m.key];
         if (scoreData && scoreData.completed) {
-          completedCount++;
+          completedMocksCount++;
           totalEarnedScore += (scoreData.total || 0);
         }
       });
 
-      const pct = Math.round((completedCount / partsConfig.length) * 100);
+      const pct = Math.round((completedMocksCount / mocksConfig.length) * 100);
 
-      const partsHtml = partsConfig.map(p => {
-        const scoreData = session.listeningScores && session.listeningScores[p.key];
+      const mocksHtml = mocksConfig.map(m => {
+        const scoreData = session.listeningScores && session.listeningScores[m.key];
         const isCompleted = scoreData && scoreData.completed;
-        const isUnlocked = session.unlockedParts && (session.unlockedParts.includes(p.key) || p.id === 1);
+        const isUnlocked = session.unlockedMocks && (session.unlockedMocks.includes(m.key) || m.id === 1);
 
         let stateClass = "locked";
         let scoreBadge = "";
-        let actionsHtml = `<div style="font-family:'JetBrains Mono'; font-size:11.5px; font-weight:700; color:var(--text-muted);">🔒 LOCKED</div>`;
+        let actionsHtml = `<div style="font-family:'JetBrains Mono'; font-size:12px; font-weight:700; color:var(--text-muted);">🔒 LOCKED</div>`;
 
         if (isCompleted) {
           stateClass = "unlocked completed";
-          scoreBadge = `<div class="block-score-badge">✓ Score: ${scoreData.total}/${p.maxScore} marks</div>`;
+          scoreBadge = `<div class="block-score-badge">✓ Score: ${scoreData.total}/${m.maxScore} marks</div>`;
           actionsHtml = `
             <div class="block-actions-group">
-              <button class="btn-block-launch review" onclick="navigateToSection('${p.fileName}')">
-                <span>↺</span> Review Part
+              <button class="btn-block-launch review" onclick="navigateToSection('${m.fileName}')">
+                <span>↺</span> Review Mock
               </button>
             </div>
           `;
         } else if (isUnlocked) {
           stateClass = "unlocked current";
-          scoreBadge = `<div class="block-score-badge" style="color:var(--accent-blue-light); border-color:rgba(96,165,250,0.3); background:rgba(37,99,235,0.1);">⏳ Incomplete (${p.maxScore} marks)</div>`;
+          scoreBadge = `<div class="block-score-badge" style="color:var(--accent-blue-light); border-color:rgba(96,165,250,0.3); background:rgba(37,99,235,0.1);">⏳ Available (${m.maxScore} marks)</div>`;
           actionsHtml = `
             <div class="block-actions-group">
-              <button class="btn-block-launch" onclick="navigateToSection('${p.fileName}')">
-                <span>▶</span> Start Part
+              <button class="btn-block-launch" onclick="navigateToSection('${m.fileName}')">
+                <span>▶</span> Start Mock Exam
               </button>
             </div>
           `;
@@ -842,8 +885,8 @@
         return `
           <div class="block-row ${stateClass}">
             <div class="block-info">
-              <h4>${p.partTitle}</h4>
-              <span>${p.desc}</span>
+              <h4>${m.title}</h4>
+              <span>${m.desc}</span>
               ${scoreBadge}
             </div>
             <div>${actionsHtml}</div>
@@ -854,16 +897,16 @@
       mount.innerHTML = `
         <div class="slide">
           <div class="center-stage">
-            <div class="center-tag"><span>🎧</span> LISTENING SYLLABUS</div>
-            <h2 class="center-title">LISTENING MOCK 01 • CURRICULUM OVERVIEW</h2>
-            <div style="max-width: 760px; margin-bottom: 8px;">
+            <div class="center-tag"><span>🎧</span> COMPLETE MOCK ROADMAP</div>
+            <h2 class="center-title">CAMBRIDGE B2 FIRST • LISTENING MOCKS 01–08</h2>
+            <div style="max-width: 780px; margin-bottom: 8px;">
               <p style="font-size:15px; color:#e2e8f0; line-height:1.5;">
-                Overall Test Score: <strong style="color:var(--accent-gold);">${totalEarnedScore} / ${totalPossibleScore} Marks</strong> (${pct}% Exam Completed). Proceed sequentially through all four parts of the Cambridge Paper 3 exam.
+                Overall Suite Score: <strong style="color:var(--accent-gold);">${totalEarnedScore} / ${totalPossibleScore} Marks</strong> (${completedMocksCount} of ${mocksConfig.length} Mocks Finished • ${pct}% Completed). Pass each Mock Exam to unlock the subsequent test.
               </p>
             </div>
 
             <div class="progress-summary-card">
-              ${partsHtml}
+              ${mocksHtml}
             </div>
           </div>
 
@@ -872,7 +915,7 @@
               <span>⬅</span> Back to Cover
             </button>
             <div style="font-family:'JetBrains Mono'; font-size:12px; color:var(--text-muted);">
-              Official Cambridge B2 Standard: 30 Marks Total (1 mark per item)
+              Official Cambridge B2 First Listening: 4 Parts • 30 Questions • 45 Mins per Mock
             </div>
           </div>
         </div>
